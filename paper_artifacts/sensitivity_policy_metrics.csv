@@ -1,0 +1,9 @@
+count,policy,group_count,fa_zero_count,fa_mean,ra_mean,erb_mean,identity_leak_at_8_mean,target_similarity_mean,summary_path
+10,nearest-hard,10,5,39.5833,89.8774,60.0574,46.6667,0.8686,derived from outputs
+10,random-hard,10,10,0.0,90.3787,94.6855,0.0,0.3905,derived from outputs
+10,median-hard,10,10,0.0,90.022,94.4776,0.0,0.3801,derived from outputs
+10,least-sim-hard,10,10,0.0,90.3613,94.6796,0.0,0.3169,derived from outputs
+20,nearest-hard,20,7,51.4583,88.6078,48.7576,60.0,0.8571,derived from outputs
+20,random-hard,20,14,25.0,88.7538,71.6464,26.6667,0.5269,derived from outputs
+20,median-hard,20,19,3.125,88.5179,91.7907,5.0,0.3573,derived from outputs
+20,least-sim-hard,20,20,0.0,88.658,93.7106,0.0,0.2973,derived from outputs

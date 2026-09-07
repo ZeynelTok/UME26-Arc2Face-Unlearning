@@ -1,0 +1,19 @@
+# Convenience development minima only. For paper reproduction use the exact
+# tested lock in paper_artifacts/reproducibility/requirements-paper-cu128.lock.
+numpy>=1.26
+pandas>=2.2
+pillow>=10.3
+tqdm>=4.66
+matplotlib>=3.9
+scikit-learn>=1.5
+opencv-python>=4.10
+insightface>=0.7.3
+onnxruntime-gpu>=1.18
+diffusers>=0.30
+transformers>=4.44
+accelerate>=0.34
+huggingface_hub>=0.24
+safetensors>=0.4
+scipy>=1.13
+torch>=2.4
+torchvision>=0.19
