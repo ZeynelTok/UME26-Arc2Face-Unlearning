@@ -1,0 +1,2966 @@
+{
+  "arcface_calibration": {
+    "false_accept_rate": 0.009976525821596244,
+    "far_target": 0.01,
+    "name": "arcface_far_0p01",
+    "num_diff_pairs": 23856,
+    "num_same_pairs": 23856,
+    "threshold": 0.14650361239910126
+  },
+  "attempts_per_run": 168,
+  "centroid_construction_policy": {
+    "embedding_pool": "all extracted eligible images except every identity's evaluation references",
+    "evaluation_references_used_for_centroids": false,
+    "evaluation_references_used_for_cohort_selection": false,
+    "evaluation_references_used_for_neighbors": false,
+    "split_before_centroid_construction": true
+  },
+  "detector_threshold_policy": {
+    "fitting_conditioning_references": 0.5,
+    "held_out_evaluation_pipeline": 0.1,
+    "train_pool_and_calibration": "supplied CelebA landmarks; detector threshold not invoked"
+  },
+  "expanded_groups": [
+    {
+      "eval_reference_images": {
+        "1628": [
+          "Data/img_align_celeba/036573.jpg",
+          "Data/img_align_celeba/040455.jpg",
+          "Data/img_align_celeba/047778.jpg"
+        ],
+        "220": [
+          "Data/img_align_celeba/019266.jpg",
+          "Data/img_align_celeba/024919.jpg",
+          "Data/img_align_celeba/031223.jpg"
+        ],
+        "5094": [
+          "Data/img_align_celeba/020823.jpg",
+          "Data/img_align_celeba/025481.jpg",
+          "Data/img_align_celeba/028821.jpg"
+        ],
+        "5095": [
+          "Data/img_align_celeba/051659.jpg",
+          "Data/img_align_celeba/051689.jpg",
+          "Data/img_align_celeba/064209.jpg"
+        ],
+        "7344": [
+          "Data/img_align_celeba/023852.jpg",
+          "Data/img_align_celeba/028688.jpg",
+          "Data/img_align_celeba/031498.jpg"
+        ],
+        "8451": [
+          "Data/img_align_celeba/056537.jpg",
+          "Data/img_align_celeba/060179.jpg",
+          "Data/img_align_celeba/062983.jpg"
+        ],
+        "9175": [
+          "Data/img_align_celeba/024380.jpg",
+          "Data/img_align_celeba/046063.jpg",
+          "Data/img_align_celeba/066103.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.3863130609194438,
+      "expanded_rank": 1,
+      "fit_reference_images": {
+        "1628": [
+          "Data/img_align_celeba/008240.jpg",
+          "Data/img_align_celeba/016146.jpg",
+          "Data/img_align_celeba/027153.jpg"
+        ],
+        "220": [
+          "Data/img_align_celeba/002284.jpg",
+          "Data/img_align_celeba/007835.jpg",
+          "Data/img_align_celeba/013780.jpg"
+        ],
+        "5094": [
+          "Data/img_align_celeba/002174.jpg",
+          "Data/img_align_celeba/003795.jpg",
+          "Data/img_align_celeba/016452.jpg"
+        ],
+        "5095": [
+          "Data/img_align_celeba/008086.jpg",
+          "Data/img_align_celeba/010048.jpg",
+          "Data/img_align_celeba/043103.jpg"
+        ],
+        "7344": [
+          "Data/img_align_celeba/007526.jpg",
+          "Data/img_align_celeba/010291.jpg",
+          "Data/img_align_celeba/021407.jpg"
+        ],
+        "8451": [
+          "Data/img_align_celeba/018210.jpg",
+          "Data/img_align_celeba/031110.jpg",
+          "Data/img_align_celeba/048700.jpg"
+        ],
+        "9175": [
+          "Data/img_align_celeba/018894.jpg",
+          "Data/img_align_celeba/021911.jpg",
+          "Data/img_align_celeba/023552.jpg"
+        ]
+      },
+      "forget_id": 5094,
+      "hard_retain_ids": [
+        5095,
+        7344,
+        9175
+      ],
+      "random_retain_ids": [
+        220,
+        8451,
+        1628
+      ],
+      "retain_ids": [
+        5095,
+        7344,
+        9175
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=1; mean_top3_distance=0.386313.",
+      "set_name": "Expanded-5094"
+    },
+    {
+      "eval_reference_images": {
+        "3562": [
+          "Data/img_align_celeba/016376.jpg",
+          "Data/img_align_celeba/018028.jpg",
+          "Data/img_align_celeba/026206.jpg"
+        ],
+        "4569": [
+          "Data/img_align_celeba/061379.jpg",
+          "Data/img_align_celeba/062294.jpg",
+          "Data/img_align_celeba/065052.jpg"
+        ],
+        "5094": [
+          "Data/img_align_celeba/020823.jpg",
+          "Data/img_align_celeba/025481.jpg",
+          "Data/img_align_celeba/028821.jpg"
+        ],
+        "5095": [
+          "Data/img_align_celeba/051659.jpg",
+          "Data/img_align_celeba/051689.jpg",
+          "Data/img_align_celeba/064209.jpg"
+        ],
+        "708": [
+          "Data/img_align_celeba/016857.jpg",
+          "Data/img_align_celeba/017585.jpg",
+          "Data/img_align_celeba/025565.jpg"
+        ],
+        "7344": [
+          "Data/img_align_celeba/023852.jpg",
+          "Data/img_align_celeba/028688.jpg",
+          "Data/img_align_celeba/031498.jpg"
+        ],
+        "9175": [
+          "Data/img_align_celeba/024380.jpg",
+          "Data/img_align_celeba/046063.jpg",
+          "Data/img_align_celeba/066103.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.39823869864145917,
+      "expanded_rank": 2,
+      "fit_reference_images": {
+        "3562": [
+          "Data/img_align_celeba/004746.jpg",
+          "Data/img_align_celeba/005814.jpg",
+          "Data/img_align_celeba/008135.jpg"
+        ],
+        "4569": [
+          "Data/img_align_celeba/032682.jpg",
+          "Data/img_align_celeba/050555.jpg",
+          "Data/img_align_celeba/059302.jpg"
+        ],
+        "5094": [
+          "Data/img_align_celeba/002174.jpg",
+          "Data/img_align_celeba/003795.jpg",
+          "Data/img_align_celeba/016452.jpg"
+        ],
+        "5095": [
+          "Data/img_align_celeba/008086.jpg",
+          "Data/img_align_celeba/010048.jpg",
+          "Data/img_align_celeba/043103.jpg"
+        ],
+        "708": [
+          "Data/img_align_celeba/007757.jpg",
+          "Data/img_align_celeba/013748.jpg",
+          "Data/img_align_celeba/016567.jpg"
+        ],
+        "7344": [
+          "Data/img_align_celeba/007526.jpg",
+          "Data/img_align_celeba/010291.jpg",
+          "Data/img_align_celeba/021407.jpg"
+        ],
+        "9175": [
+          "Data/img_align_celeba/018894.jpg",
+          "Data/img_align_celeba/021911.jpg",
+          "Data/img_align_celeba/023552.jpg"
+        ]
+      },
+      "forget_id": 5095,
+      "hard_retain_ids": [
+        5094,
+        7344,
+        9175
+      ],
+      "random_retain_ids": [
+        3562,
+        4569,
+        708
+      ],
+      "retain_ids": [
+        5094,
+        7344,
+        9175
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=2; mean_top3_distance=0.398239.",
+      "set_name": "Expanded-5095"
+    },
+    {
+      "eval_reference_images": {
+        "1629": [
+          "Data/img_align_celeba/038514.jpg",
+          "Data/img_align_celeba/044076.jpg",
+          "Data/img_align_celeba/050071.jpg"
+        ],
+        "1630": [
+          "Data/img_align_celeba/033919.jpg",
+          "Data/img_align_celeba/035660.jpg",
+          "Data/img_align_celeba/037685.jpg"
+        ],
+        "2953": [
+          "Data/img_align_celeba/025515.jpg",
+          "Data/img_align_celeba/029261.jpg",
+          "Data/img_align_celeba/036022.jpg"
+        ],
+        "6217": [
+          "Data/img_align_celeba/061129.jpg",
+          "Data/img_align_celeba/061784.jpg",
+          "Data/img_align_celeba/062023.jpg"
+        ],
+        "7011": [
+          "Data/img_align_celeba/044255.jpg",
+          "Data/img_align_celeba/044532.jpg",
+          "Data/img_align_celeba/057708.jpg"
+        ],
+        "7850": [
+          "Data/img_align_celeba/009728.jpg",
+          "Data/img_align_celeba/016178.jpg",
+          "Data/img_align_celeba/033942.jpg"
+        ],
+        "8254": [
+          "Data/img_align_celeba/034270.jpg",
+          "Data/img_align_celeba/048716.jpg",
+          "Data/img_align_celeba/053477.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.41431963443756104,
+      "expanded_rank": 3,
+      "fit_reference_images": {
+        "1629": [
+          "Data/img_align_celeba/006378.jpg",
+          "Data/img_align_celeba/014149.jpg",
+          "Data/img_align_celeba/030794.jpg"
+        ],
+        "1630": [
+          "Data/img_align_celeba/003936.jpg",
+          "Data/img_align_celeba/019247.jpg",
+          "Data/img_align_celeba/033843.jpg"
+        ],
+        "2953": [
+          "Data/img_align_celeba/000421.jpg",
+          "Data/img_align_celeba/001043.jpg",
+          "Data/img_align_celeba/005753.jpg"
+        ],
+        "6217": [
+          "Data/img_align_celeba/003466.jpg",
+          "Data/img_align_celeba/008374.jpg",
+          "Data/img_align_celeba/033730.jpg"
+        ],
+        "7011": [
+          "Data/img_align_celeba/000476.jpg",
+          "Data/img_align_celeba/005665.jpg",
+          "Data/img_align_celeba/022709.jpg"
+        ],
+        "7850": [
+          "Data/img_align_celeba/004242.jpg",
+          "Data/img_align_celeba/007562.jpg",
+          "Data/img_align_celeba/008523.jpg"
+        ],
+        "8254": [
+          "Data/img_align_celeba/005546.jpg",
+          "Data/img_align_celeba/007073.jpg",
+          "Data/img_align_celeba/029318.jpg"
+        ]
+      },
+      "forget_id": 1629,
+      "hard_retain_ids": [
+        1630,
+        2953,
+        6217
+      ],
+      "random_retain_ids": [
+        8254,
+        7850,
+        7011
+      ],
+      "retain_ids": [
+        1630,
+        2953,
+        6217
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=3; mean_top3_distance=0.414320.",
+      "set_name": "Expanded-1629"
+    },
+    {
+      "eval_reference_images": {
+        "1489": [
+          "Data/img_align_celeba/043176.jpg",
+          "Data/img_align_celeba/044093.jpg",
+          "Data/img_align_celeba/054516.jpg"
+        ],
+        "1490": [
+          "Data/img_align_celeba/015807.jpg",
+          "Data/img_align_celeba/016954.jpg",
+          "Data/img_align_celeba/030028.jpg"
+        ],
+        "1616": [
+          "Data/img_align_celeba/066937.jpg",
+          "Data/img_align_celeba/080573.jpg",
+          "Data/img_align_celeba/081698.jpg"
+        ],
+        "2930": [
+          "Data/img_align_celeba/017260.jpg",
+          "Data/img_align_celeba/019031.jpg",
+          "Data/img_align_celeba/025865.jpg"
+        ],
+        "358": [
+          "Data/img_align_celeba/039249.jpg",
+          "Data/img_align_celeba/041850.jpg",
+          "Data/img_align_celeba/050492.jpg"
+        ],
+        "6444": [
+          "Data/img_align_celeba/024196.jpg",
+          "Data/img_align_celeba/033975.jpg",
+          "Data/img_align_celeba/040764.jpg"
+        ],
+        "8514": [
+          "Data/img_align_celeba/009985.jpg",
+          "Data/img_align_celeba/017427.jpg",
+          "Data/img_align_celeba/023259.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4230255087216695,
+      "expanded_rank": 4,
+      "fit_reference_images": {
+        "1489": [
+          "Data/img_align_celeba/004938.jpg",
+          "Data/img_align_celeba/010443.jpg",
+          "Data/img_align_celeba/036960.jpg"
+        ],
+        "1490": [
+          "Data/img_align_celeba/007291.jpg",
+          "Data/img_align_celeba/008539.jpg",
+          "Data/img_align_celeba/011606.jpg"
+        ],
+        "1616": [
+          "Data/img_align_celeba/004019.jpg",
+          "Data/img_align_celeba/058012.jpg",
+          "Data/img_align_celeba/066309.jpg"
+        ],
+        "2930": [
+          "Data/img_align_celeba/000536.jpg",
+          "Data/img_align_celeba/015297.jpg",
+          "Data/img_align_celeba/015348.jpg"
+        ],
+        "358": [
+          "Data/img_align_celeba/003444.jpg",
+          "Data/img_align_celeba/006326.jpg",
+          "Data/img_align_celeba/034217.jpg"
+        ],
+        "6444": [
+          "Data/img_align_celeba/018708.jpg",
+          "Data/img_align_celeba/019983.jpg",
+          "Data/img_align_celeba/020370.jpg"
+        ],
+        "8514": [
+          "Data/img_align_celeba/000322.jpg",
+          "Data/img_align_celeba/002982.jpg",
+          "Data/img_align_celeba/007887.jpg"
+        ]
+      },
+      "forget_id": 1489,
+      "hard_retain_ids": [
+        1490,
+        2930,
+        358
+      ],
+      "random_retain_ids": [
+        8514,
+        6444,
+        1616
+      ],
+      "retain_ids": [
+        1490,
+        2930,
+        358
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=4; mean_top3_distance=0.423026.",
+      "set_name": "Expanded-1489"
+    },
+    {
+      "eval_reference_images": {
+        "1489": [
+          "Data/img_align_celeba/043176.jpg",
+          "Data/img_align_celeba/044093.jpg",
+          "Data/img_align_celeba/054516.jpg"
+        ],
+        "1490": [
+          "Data/img_align_celeba/015807.jpg",
+          "Data/img_align_celeba/016954.jpg",
+          "Data/img_align_celeba/030028.jpg"
+        ],
+        "1513": [
+          "Data/img_align_celeba/031549.jpg",
+          "Data/img_align_celeba/032132.jpg",
+          "Data/img_align_celeba/034384.jpg"
+        ],
+        "2930": [
+          "Data/img_align_celeba/017260.jpg",
+          "Data/img_align_celeba/019031.jpg",
+          "Data/img_align_celeba/025865.jpg"
+        ],
+        "358": [
+          "Data/img_align_celeba/039249.jpg",
+          "Data/img_align_celeba/041850.jpg",
+          "Data/img_align_celeba/050492.jpg"
+        ],
+        "7233": [
+          "Data/img_align_celeba/010893.jpg",
+          "Data/img_align_celeba/019452.jpg",
+          "Data/img_align_celeba/037940.jpg"
+        ],
+        "9808": [
+          "Data/img_align_celeba/016126.jpg",
+          "Data/img_align_celeba/026483.jpg",
+          "Data/img_align_celeba/026913.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4234088857968648,
+      "expanded_rank": 5,
+      "fit_reference_images": {
+        "1489": [
+          "Data/img_align_celeba/004938.jpg",
+          "Data/img_align_celeba/010443.jpg",
+          "Data/img_align_celeba/036960.jpg"
+        ],
+        "1490": [
+          "Data/img_align_celeba/007291.jpg",
+          "Data/img_align_celeba/008539.jpg",
+          "Data/img_align_celeba/011606.jpg"
+        ],
+        "1513": [
+          "Data/img_align_celeba/003019.jpg",
+          "Data/img_align_celeba/006830.jpg",
+          "Data/img_align_celeba/014111.jpg"
+        ],
+        "2930": [
+          "Data/img_align_celeba/000536.jpg",
+          "Data/img_align_celeba/015297.jpg",
+          "Data/img_align_celeba/015348.jpg"
+        ],
+        "358": [
+          "Data/img_align_celeba/003444.jpg",
+          "Data/img_align_celeba/006326.jpg",
+          "Data/img_align_celeba/034217.jpg"
+        ],
+        "7233": [
+          "Data/img_align_celeba/004800.jpg",
+          "Data/img_align_celeba/009730.jpg",
+          "Data/img_align_celeba/010244.jpg"
+        ],
+        "9808": [
+          "Data/img_align_celeba/000606.jpg",
+          "Data/img_align_celeba/004459.jpg",
+          "Data/img_align_celeba/010429.jpg"
+        ]
+      },
+      "forget_id": 1490,
+      "hard_retain_ids": [
+        1489,
+        2930,
+        358
+      ],
+      "random_retain_ids": [
+        9808,
+        1513,
+        7233
+      ],
+      "retain_ids": [
+        1489,
+        2930,
+        358
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=5; mean_top3_distance=0.423409.",
+      "set_name": "Expanded-1490"
+    },
+    {
+      "eval_reference_images": {
+        "2882": [
+          "Data/img_align_celeba/043256.jpg",
+          "Data/img_align_celeba/043291.jpg",
+          "Data/img_align_celeba/066648.jpg"
+        ],
+        "3465": [
+          "Data/img_align_celeba/022661.jpg",
+          "Data/img_align_celeba/024191.jpg",
+          "Data/img_align_celeba/035685.jpg"
+        ],
+        "3467": [
+          "Data/img_align_celeba/011299.jpg",
+          "Data/img_align_celeba/023897.jpg",
+          "Data/img_align_celeba/038923.jpg"
+        ],
+        "5950": [
+          "Data/img_align_celeba/015822.jpg",
+          "Data/img_align_celeba/025095.jpg",
+          "Data/img_align_celeba/038913.jpg"
+        ],
+        "6256": [
+          "Data/img_align_celeba/022858.jpg",
+          "Data/img_align_celeba/029280.jpg",
+          "Data/img_align_celeba/030701.jpg"
+        ],
+        "7458": [
+          "Data/img_align_celeba/013537.jpg",
+          "Data/img_align_celeba/016488.jpg",
+          "Data/img_align_celeba/023038.jpg"
+        ],
+        "7624": [
+          "Data/img_align_celeba/023009.jpg",
+          "Data/img_align_celeba/032087.jpg",
+          "Data/img_align_celeba/038015.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.42703978220621747,
+      "expanded_rank": 6,
+      "fit_reference_images": {
+        "2882": [
+          "Data/img_align_celeba/006948.jpg",
+          "Data/img_align_celeba/040068.jpg",
+          "Data/img_align_celeba/043047.jpg"
+        ],
+        "3465": [
+          "Data/img_align_celeba/001130.jpg",
+          "Data/img_align_celeba/008934.jpg",
+          "Data/img_align_celeba/013850.jpg"
+        ],
+        "3467": [
+          "Data/img_align_celeba/004512.jpg",
+          "Data/img_align_celeba/004782.jpg",
+          "Data/img_align_celeba/010287.jpg"
+        ],
+        "5950": [
+          "Data/img_align_celeba/000112.jpg",
+          "Data/img_align_celeba/008998.jpg",
+          "Data/img_align_celeba/015284.jpg"
+        ],
+        "6256": [
+          "Data/img_align_celeba/004396.jpg",
+          "Data/img_align_celeba/014296.jpg",
+          "Data/img_align_celeba/022391.jpg"
+        ],
+        "7458": [
+          "Data/img_align_celeba/000833.jpg",
+          "Data/img_align_celeba/004688.jpg",
+          "Data/img_align_celeba/004959.jpg"
+        ],
+        "7624": [
+          "Data/img_align_celeba/000142.jpg",
+          "Data/img_align_celeba/014553.jpg",
+          "Data/img_align_celeba/022350.jpg"
+        ]
+      },
+      "forget_id": 3467,
+      "hard_retain_ids": [
+        3465,
+        7624,
+        2882
+      ],
+      "random_retain_ids": [
+        7458,
+        5950,
+        6256
+      ],
+      "retain_ids": [
+        3465,
+        7624,
+        2882
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=6; mean_top3_distance=0.427040.",
+      "set_name": "Expanded-3467"
+    },
+    {
+      "eval_reference_images": {
+        "2882": [
+          "Data/img_align_celeba/043256.jpg",
+          "Data/img_align_celeba/043291.jpg",
+          "Data/img_align_celeba/066648.jpg"
+        ],
+        "3465": [
+          "Data/img_align_celeba/022661.jpg",
+          "Data/img_align_celeba/024191.jpg",
+          "Data/img_align_celeba/035685.jpg"
+        ],
+        "3467": [
+          "Data/img_align_celeba/011299.jpg",
+          "Data/img_align_celeba/023897.jpg",
+          "Data/img_align_celeba/038923.jpg"
+        ],
+        "6354": [
+          "Data/img_align_celeba/007130.jpg",
+          "Data/img_align_celeba/013592.jpg",
+          "Data/img_align_celeba/024124.jpg"
+        ],
+        "6481": [
+          "Data/img_align_celeba/021982.jpg",
+          "Data/img_align_celeba/026362.jpg",
+          "Data/img_align_celeba/045686.jpg"
+        ],
+        "7624": [
+          "Data/img_align_celeba/023009.jpg",
+          "Data/img_align_celeba/032087.jpg",
+          "Data/img_align_celeba/038015.jpg"
+        ],
+        "8209": [
+          "Data/img_align_celeba/015779.jpg",
+          "Data/img_align_celeba/032449.jpg",
+          "Data/img_align_celeba/032524.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.43322322765986127,
+      "expanded_rank": 7,
+      "fit_reference_images": {
+        "2882": [
+          "Data/img_align_celeba/006948.jpg",
+          "Data/img_align_celeba/040068.jpg",
+          "Data/img_align_celeba/043047.jpg"
+        ],
+        "3465": [
+          "Data/img_align_celeba/001130.jpg",
+          "Data/img_align_celeba/008934.jpg",
+          "Data/img_align_celeba/013850.jpg"
+        ],
+        "3467": [
+          "Data/img_align_celeba/004512.jpg",
+          "Data/img_align_celeba/004782.jpg",
+          "Data/img_align_celeba/010287.jpg"
+        ],
+        "6354": [
+          "Data/img_align_celeba/002278.jpg",
+          "Data/img_align_celeba/003673.jpg",
+          "Data/img_align_celeba/005818.jpg"
+        ],
+        "6481": [
+          "Data/img_align_celeba/013476.jpg",
+          "Data/img_align_celeba/013495.jpg",
+          "Data/img_align_celeba/016873.jpg"
+        ],
+        "7624": [
+          "Data/img_align_celeba/000142.jpg",
+          "Data/img_align_celeba/014553.jpg",
+          "Data/img_align_celeba/022350.jpg"
+        ],
+        "8209": [
+          "Data/img_align_celeba/009166.jpg",
+          "Data/img_align_celeba/009271.jpg",
+          "Data/img_align_celeba/011252.jpg"
+        ]
+      },
+      "forget_id": 3465,
+      "hard_retain_ids": [
+        3467,
+        7624,
+        2882
+      ],
+      "random_retain_ids": [
+        6481,
+        6354,
+        8209
+      ],
+      "retain_ids": [
+        3467,
+        7624,
+        2882
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=7; mean_top3_distance=0.433223.",
+      "set_name": "Expanded-3465"
+    },
+    {
+      "eval_reference_images": {
+        "1435": [
+          "Data/img_align_celeba/013153.jpg",
+          "Data/img_align_celeba/014674.jpg",
+          "Data/img_align_celeba/022715.jpg"
+        ],
+        "1629": [
+          "Data/img_align_celeba/038514.jpg",
+          "Data/img_align_celeba/044076.jpg",
+          "Data/img_align_celeba/050071.jpg"
+        ],
+        "1630": [
+          "Data/img_align_celeba/033919.jpg",
+          "Data/img_align_celeba/035660.jpg",
+          "Data/img_align_celeba/037685.jpg"
+        ],
+        "2628": [
+          "Data/img_align_celeba/045426.jpg",
+          "Data/img_align_celeba/052099.jpg",
+          "Data/img_align_celeba/054061.jpg"
+        ],
+        "2953": [
+          "Data/img_align_celeba/025515.jpg",
+          "Data/img_align_celeba/029261.jpg",
+          "Data/img_align_celeba/036022.jpg"
+        ],
+        "3239": [
+          "Data/img_align_celeba/014532.jpg",
+          "Data/img_align_celeba/020648.jpg",
+          "Data/img_align_celeba/025733.jpg"
+        ],
+        "6217": [
+          "Data/img_align_celeba/061129.jpg",
+          "Data/img_align_celeba/061784.jpg",
+          "Data/img_align_celeba/062023.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.433480699857076,
+      "expanded_rank": 8,
+      "fit_reference_images": {
+        "1435": [
+          "Data/img_align_celeba/000160.jpg",
+          "Data/img_align_celeba/005445.jpg",
+          "Data/img_align_celeba/012303.jpg"
+        ],
+        "1629": [
+          "Data/img_align_celeba/006378.jpg",
+          "Data/img_align_celeba/014149.jpg",
+          "Data/img_align_celeba/030794.jpg"
+        ],
+        "1630": [
+          "Data/img_align_celeba/003936.jpg",
+          "Data/img_align_celeba/019247.jpg",
+          "Data/img_align_celeba/033843.jpg"
+        ],
+        "2628": [
+          "Data/img_align_celeba/011033.jpg",
+          "Data/img_align_celeba/032908.jpg",
+          "Data/img_align_celeba/043557.jpg"
+        ],
+        "2953": [
+          "Data/img_align_celeba/000421.jpg",
+          "Data/img_align_celeba/001043.jpg",
+          "Data/img_align_celeba/005753.jpg"
+        ],
+        "3239": [
+          "Data/img_align_celeba/000640.jpg",
+          "Data/img_align_celeba/002355.jpg",
+          "Data/img_align_celeba/013349.jpg"
+        ],
+        "6217": [
+          "Data/img_align_celeba/003466.jpg",
+          "Data/img_align_celeba/008374.jpg",
+          "Data/img_align_celeba/033730.jpg"
+        ]
+      },
+      "forget_id": 1630,
+      "hard_retain_ids": [
+        1629,
+        2953,
+        6217
+      ],
+      "random_retain_ids": [
+        1435,
+        2628,
+        3239
+      ],
+      "retain_ids": [
+        1629,
+        2953,
+        6217
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=8; mean_top3_distance=0.433481.",
+      "set_name": "Expanded-1630"
+    },
+    {
+      "eval_reference_images": {
+        "2235": [
+          "Data/img_align_celeba/002952.jpg",
+          "Data/img_align_celeba/004256.jpg",
+          "Data/img_align_celeba/004520.jpg"
+        ],
+        "2962": [
+          "Data/img_align_celeba/053114.jpg",
+          "Data/img_align_celeba/059722.jpg",
+          "Data/img_align_celeba/060015.jpg"
+        ],
+        "4430": [
+          "Data/img_align_celeba/014788.jpg",
+          "Data/img_align_celeba/018624.jpg",
+          "Data/img_align_celeba/024448.jpg"
+        ],
+        "4431": [
+          "Data/img_align_celeba/017433.jpg",
+          "Data/img_align_celeba/019524.jpg",
+          "Data/img_align_celeba/028684.jpg"
+        ],
+        "5195": [
+          "Data/img_align_celeba/023936.jpg",
+          "Data/img_align_celeba/027133.jpg",
+          "Data/img_align_celeba/035100.jpg"
+        ],
+        "831": [
+          "Data/img_align_celeba/008813.jpg",
+          "Data/img_align_celeba/013640.jpg",
+          "Data/img_align_celeba/018660.jpg"
+        ],
+        "8469": [
+          "Data/img_align_celeba/005917.jpg",
+          "Data/img_align_celeba/007014.jpg",
+          "Data/img_align_celeba/007252.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.44232531388600665,
+      "expanded_rank": 9,
+      "fit_reference_images": {
+        "2235": [
+          "Data/img_align_celeba/001359.jpg",
+          "Data/img_align_celeba/001494.jpg",
+          "Data/img_align_celeba/002285.jpg"
+        ],
+        "2962": [
+          "Data/img_align_celeba/009538.jpg",
+          "Data/img_align_celeba/014742.jpg",
+          "Data/img_align_celeba/034353.jpg"
+        ],
+        "4430": [
+          "Data/img_align_celeba/009408.jpg",
+          "Data/img_align_celeba/009852.jpg",
+          "Data/img_align_celeba/010256.jpg"
+        ],
+        "4431": [
+          "Data/img_align_celeba/005848.jpg",
+          "Data/img_align_celeba/012172.jpg",
+          "Data/img_align_celeba/015408.jpg"
+        ],
+        "5195": [
+          "Data/img_align_celeba/005523.jpg",
+          "Data/img_align_celeba/010407.jpg",
+          "Data/img_align_celeba/017555.jpg"
+        ],
+        "831": [
+          "Data/img_align_celeba/003413.jpg",
+          "Data/img_align_celeba/008219.jpg",
+          "Data/img_align_celeba/008621.jpg"
+        ],
+        "8469": [
+          "Data/img_align_celeba/000331.jpg",
+          "Data/img_align_celeba/000564.jpg",
+          "Data/img_align_celeba/001197.jpg"
+        ]
+      },
+      "forget_id": 4430,
+      "hard_retain_ids": [
+        4431,
+        2235,
+        2962
+      ],
+      "random_retain_ids": [
+        831,
+        8469,
+        5195
+      ],
+      "retain_ids": [
+        4431,
+        2235,
+        2962
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=9; mean_top3_distance=0.442325.",
+      "set_name": "Expanded-4430"
+    },
+    {
+      "eval_reference_images": {
+        "3693": [
+          "Data/img_align_celeba/005957.jpg",
+          "Data/img_align_celeba/044409.jpg",
+          "Data/img_align_celeba/052457.jpg"
+        ],
+        "3918": [
+          "Data/img_align_celeba/047623.jpg",
+          "Data/img_align_celeba/066152.jpg",
+          "Data/img_align_celeba/071525.jpg"
+        ],
+        "3920": [
+          "Data/img_align_celeba/007199.jpg",
+          "Data/img_align_celeba/014876.jpg",
+          "Data/img_align_celeba/015767.jpg"
+        ],
+        "5577": [
+          "Data/img_align_celeba/029589.jpg",
+          "Data/img_align_celeba/041140.jpg",
+          "Data/img_align_celeba/057391.jpg"
+        ],
+        "6564": [
+          "Data/img_align_celeba/045985.jpg",
+          "Data/img_align_celeba/048938.jpg",
+          "Data/img_align_celeba/054608.jpg"
+        ],
+        "8250": [
+          "Data/img_align_celeba/011761.jpg",
+          "Data/img_align_celeba/011907.jpg",
+          "Data/img_align_celeba/017898.jpg"
+        ],
+        "95": [
+          "Data/img_align_celeba/032499.jpg",
+          "Data/img_align_celeba/033427.jpg",
+          "Data/img_align_celeba/041180.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4424545963605245,
+      "expanded_rank": 10,
+      "fit_reference_images": {
+        "3693": [
+          "Data/img_align_celeba/002247.jpg",
+          "Data/img_align_celeba/004143.jpg",
+          "Data/img_align_celeba/004906.jpg"
+        ],
+        "3918": [
+          "Data/img_align_celeba/011549.jpg",
+          "Data/img_align_celeba/024242.jpg",
+          "Data/img_align_celeba/026859.jpg"
+        ],
+        "3920": [
+          "Data/img_align_celeba/000748.jpg",
+          "Data/img_align_celeba/002701.jpg",
+          "Data/img_align_celeba/005256.jpg"
+        ],
+        "5577": [
+          "Data/img_align_celeba/004302.jpg",
+          "Data/img_align_celeba/015907.jpg",
+          "Data/img_align_celeba/025492.jpg"
+        ],
+        "6564": [
+          "Data/img_align_celeba/004022.jpg",
+          "Data/img_align_celeba/015651.jpg",
+          "Data/img_align_celeba/045056.jpg"
+        ],
+        "8250": [
+          "Data/img_align_celeba/002888.jpg",
+          "Data/img_align_celeba/004965.jpg",
+          "Data/img_align_celeba/009465.jpg"
+        ],
+        "95": [
+          "Data/img_align_celeba/011073.jpg",
+          "Data/img_align_celeba/020940.jpg",
+          "Data/img_align_celeba/030162.jpg"
+        ]
+      },
+      "forget_id": 3920,
+      "hard_retain_ids": [
+        3693,
+        3918,
+        5577
+      ],
+      "random_retain_ids": [
+        95,
+        6564,
+        8250
+      ],
+      "retain_ids": [
+        3693,
+        3918,
+        5577
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=10; mean_top3_distance=0.442455.",
+      "set_name": "Expanded-3920"
+    },
+    {
+      "eval_reference_images": {
+        "10074": [
+          "Data/img_align_celeba/019850.jpg",
+          "Data/img_align_celeba/037215.jpg",
+          "Data/img_align_celeba/045410.jpg"
+        ],
+        "1507": [
+          "Data/img_align_celeba/029462.jpg",
+          "Data/img_align_celeba/031105.jpg",
+          "Data/img_align_celeba/032518.jpg"
+        ],
+        "2235": [
+          "Data/img_align_celeba/002952.jpg",
+          "Data/img_align_celeba/004256.jpg",
+          "Data/img_align_celeba/004520.jpg"
+        ],
+        "2962": [
+          "Data/img_align_celeba/053114.jpg",
+          "Data/img_align_celeba/059722.jpg",
+          "Data/img_align_celeba/060015.jpg"
+        ],
+        "3509": [
+          "Data/img_align_celeba/045544.jpg",
+          "Data/img_align_celeba/053926.jpg",
+          "Data/img_align_celeba/059804.jpg"
+        ],
+        "4430": [
+          "Data/img_align_celeba/014788.jpg",
+          "Data/img_align_celeba/018624.jpg",
+          "Data/img_align_celeba/024448.jpg"
+        ],
+        "4431": [
+          "Data/img_align_celeba/017433.jpg",
+          "Data/img_align_celeba/019524.jpg",
+          "Data/img_align_celeba/028684.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4431765675544739,
+      "expanded_rank": 11,
+      "fit_reference_images": {
+        "10074": [
+          "Data/img_align_celeba/002794.jpg",
+          "Data/img_align_celeba/003794.jpg",
+          "Data/img_align_celeba/018434.jpg"
+        ],
+        "1507": [
+          "Data/img_align_celeba/001535.jpg",
+          "Data/img_align_celeba/002964.jpg",
+          "Data/img_align_celeba/006125.jpg"
+        ],
+        "2235": [
+          "Data/img_align_celeba/001359.jpg",
+          "Data/img_align_celeba/001494.jpg",
+          "Data/img_align_celeba/002285.jpg"
+        ],
+        "2962": [
+          "Data/img_align_celeba/009538.jpg",
+          "Data/img_align_celeba/014742.jpg",
+          "Data/img_align_celeba/034353.jpg"
+        ],
+        "3509": [
+          "Data/img_align_celeba/019310.jpg",
+          "Data/img_align_celeba/035398.jpg",
+          "Data/img_align_celeba/035865.jpg"
+        ],
+        "4430": [
+          "Data/img_align_celeba/009408.jpg",
+          "Data/img_align_celeba/009852.jpg",
+          "Data/img_align_celeba/010256.jpg"
+        ],
+        "4431": [
+          "Data/img_align_celeba/005848.jpg",
+          "Data/img_align_celeba/012172.jpg",
+          "Data/img_align_celeba/015408.jpg"
+        ]
+      },
+      "forget_id": 4431,
+      "hard_retain_ids": [
+        4430,
+        2962,
+        2235
+      ],
+      "random_retain_ids": [
+        3509,
+        1507,
+        10074
+      ],
+      "retain_ids": [
+        4430,
+        2962,
+        2235
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=11; mean_top3_distance=0.443177.",
+      "set_name": "Expanded-4431"
+    },
+    {
+      "eval_reference_images": {
+        "3118": [
+          "Data/img_align_celeba/022339.jpg",
+          "Data/img_align_celeba/024408.jpg",
+          "Data/img_align_celeba/029701.jpg"
+        ],
+        "409": [
+          "Data/img_align_celeba/036433.jpg",
+          "Data/img_align_celeba/039703.jpg",
+          "Data/img_align_celeba/040070.jpg"
+        ],
+        "4262": [
+          "Data/img_align_celeba/014166.jpg",
+          "Data/img_align_celeba/018888.jpg",
+          "Data/img_align_celeba/021878.jpg"
+        ],
+        "4426": [
+          "Data/img_align_celeba/032099.jpg",
+          "Data/img_align_celeba/041693.jpg",
+          "Data/img_align_celeba/058517.jpg"
+        ],
+        "4427": [
+          "Data/img_align_celeba/009791.jpg",
+          "Data/img_align_celeba/020412.jpg",
+          "Data/img_align_celeba/028615.jpg"
+        ],
+        "5860": [
+          "Data/img_align_celeba/031115.jpg",
+          "Data/img_align_celeba/031296.jpg",
+          "Data/img_align_celeba/033759.jpg"
+        ],
+        "6046": [
+          "Data/img_align_celeba/018801.jpg",
+          "Data/img_align_celeba/019992.jpg",
+          "Data/img_align_celeba/031291.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.44487464427948,
+      "expanded_rank": 12,
+      "fit_reference_images": {
+        "3118": [
+          "Data/img_align_celeba/000263.jpg",
+          "Data/img_align_celeba/020790.jpg",
+          "Data/img_align_celeba/022045.jpg"
+        ],
+        "409": [
+          "Data/img_align_celeba/031380.jpg",
+          "Data/img_align_celeba/032563.jpg",
+          "Data/img_align_celeba/033765.jpg"
+        ],
+        "4262": [
+          "Data/img_align_celeba/000096.jpg",
+          "Data/img_align_celeba/007770.jpg",
+          "Data/img_align_celeba/010089.jpg"
+        ],
+        "4426": [
+          "Data/img_align_celeba/006607.jpg",
+          "Data/img_align_celeba/013013.jpg",
+          "Data/img_align_celeba/015992.jpg"
+        ],
+        "4427": [
+          "Data/img_align_celeba/006959.jpg",
+          "Data/img_align_celeba/009014.jpg",
+          "Data/img_align_celeba/009153.jpg"
+        ],
+        "5860": [
+          "Data/img_align_celeba/013088.jpg",
+          "Data/img_align_celeba/014103.jpg",
+          "Data/img_align_celeba/018053.jpg"
+        ],
+        "6046": [
+          "Data/img_align_celeba/013256.jpg",
+          "Data/img_align_celeba/013375.jpg",
+          "Data/img_align_celeba/018482.jpg"
+        ]
+      },
+      "forget_id": 4427,
+      "hard_retain_ids": [
+        4426,
+        409,
+        6046
+      ],
+      "random_retain_ids": [
+        4262,
+        5860,
+        3118
+      ],
+      "retain_ids": [
+        4426,
+        409,
+        6046
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=12; mean_top3_distance=0.444875.",
+      "set_name": "Expanded-4427"
+    },
+    {
+      "eval_reference_images": {
+        "1916": [
+          "Data/img_align_celeba/015632.jpg",
+          "Data/img_align_celeba/022513.jpg",
+          "Data/img_align_celeba/022872.jpg"
+        ],
+        "409": [
+          "Data/img_align_celeba/036433.jpg",
+          "Data/img_align_celeba/039703.jpg",
+          "Data/img_align_celeba/040070.jpg"
+        ],
+        "4426": [
+          "Data/img_align_celeba/032099.jpg",
+          "Data/img_align_celeba/041693.jpg",
+          "Data/img_align_celeba/058517.jpg"
+        ],
+        "4427": [
+          "Data/img_align_celeba/009791.jpg",
+          "Data/img_align_celeba/020412.jpg",
+          "Data/img_align_celeba/028615.jpg"
+        ],
+        "6046": [
+          "Data/img_align_celeba/018801.jpg",
+          "Data/img_align_celeba/019992.jpg",
+          "Data/img_align_celeba/031291.jpg"
+        ],
+        "9359": [
+          "Data/img_align_celeba/023783.jpg",
+          "Data/img_align_celeba/025054.jpg",
+          "Data/img_align_celeba/026849.jpg"
+        ],
+        "9783": [
+          "Data/img_align_celeba/030064.jpg",
+          "Data/img_align_celeba/035005.jpg",
+          "Data/img_align_celeba/035212.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4456356167793274,
+      "expanded_rank": 13,
+      "fit_reference_images": {
+        "1916": [
+          "Data/img_align_celeba/010233.jpg",
+          "Data/img_align_celeba/010290.jpg",
+          "Data/img_align_celeba/014123.jpg"
+        ],
+        "409": [
+          "Data/img_align_celeba/031380.jpg",
+          "Data/img_align_celeba/032563.jpg",
+          "Data/img_align_celeba/033765.jpg"
+        ],
+        "4426": [
+          "Data/img_align_celeba/006607.jpg",
+          "Data/img_align_celeba/013013.jpg",
+          "Data/img_align_celeba/015992.jpg"
+        ],
+        "4427": [
+          "Data/img_align_celeba/006959.jpg",
+          "Data/img_align_celeba/009014.jpg",
+          "Data/img_align_celeba/009153.jpg"
+        ],
+        "6046": [
+          "Data/img_align_celeba/013256.jpg",
+          "Data/img_align_celeba/013375.jpg",
+          "Data/img_align_celeba/018482.jpg"
+        ],
+        "9359": [
+          "Data/img_align_celeba/003492.jpg",
+          "Data/img_align_celeba/005145.jpg",
+          "Data/img_align_celeba/013520.jpg"
+        ],
+        "9783": [
+          "Data/img_align_celeba/005520.jpg",
+          "Data/img_align_celeba/015032.jpg",
+          "Data/img_align_celeba/022797.jpg"
+        ]
+      },
+      "forget_id": 4426,
+      "hard_retain_ids": [
+        4427,
+        409,
+        6046
+      ],
+      "random_retain_ids": [
+        9783,
+        1916,
+        9359
+      ],
+      "retain_ids": [
+        4427,
+        409,
+        6046
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=13; mean_top3_distance=0.445636.",
+      "set_name": "Expanded-4426"
+    },
+    {
+      "eval_reference_images": {
+        "1368": [
+          "Data/img_align_celeba/008132.jpg",
+          "Data/img_align_celeba/016451.jpg",
+          "Data/img_align_celeba/042839.jpg"
+        ],
+        "1375": [
+          "Data/img_align_celeba/029236.jpg",
+          "Data/img_align_celeba/032521.jpg",
+          "Data/img_align_celeba/044063.jpg"
+        ],
+        "384": [
+          "Data/img_align_celeba/015512.jpg",
+          "Data/img_align_celeba/016341.jpg",
+          "Data/img_align_celeba/028984.jpg"
+        ],
+        "5221": [
+          "Data/img_align_celeba/033996.jpg",
+          "Data/img_align_celeba/034293.jpg",
+          "Data/img_align_celeba/035248.jpg"
+        ],
+        "5982": [
+          "Data/img_align_celeba/016022.jpg",
+          "Data/img_align_celeba/018868.jpg",
+          "Data/img_align_celeba/019127.jpg"
+        ],
+        "7917": [
+          "Data/img_align_celeba/030976.jpg",
+          "Data/img_align_celeba/040288.jpg",
+          "Data/img_align_celeba/043332.jpg"
+        ],
+        "8722": [
+          "Data/img_align_celeba/008315.jpg",
+          "Data/img_align_celeba/035619.jpg",
+          "Data/img_align_celeba/037762.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.45289021730422974,
+      "expanded_rank": 14,
+      "fit_reference_images": {
+        "1368": [
+          "Data/img_align_celeba/000940.jpg",
+          "Data/img_align_celeba/000976.jpg",
+          "Data/img_align_celeba/003721.jpg"
+        ],
+        "1375": [
+          "Data/img_align_celeba/014198.jpg",
+          "Data/img_align_celeba/017241.jpg",
+          "Data/img_align_celeba/027334.jpg"
+        ],
+        "384": [
+          "Data/img_align_celeba/000471.jpg",
+          "Data/img_align_celeba/006033.jpg",
+          "Data/img_align_celeba/009526.jpg"
+        ],
+        "5221": [
+          "Data/img_align_celeba/008734.jpg",
+          "Data/img_align_celeba/012523.jpg",
+          "Data/img_align_celeba/024211.jpg"
+        ],
+        "5982": [
+          "Data/img_align_celeba/004016.jpg",
+          "Data/img_align_celeba/013847.jpg",
+          "Data/img_align_celeba/015826.jpg"
+        ],
+        "7917": [
+          "Data/img_align_celeba/001640.jpg",
+          "Data/img_align_celeba/011594.jpg",
+          "Data/img_align_celeba/014771.jpg"
+        ],
+        "8722": [
+          "Data/img_align_celeba/000819.jpg",
+          "Data/img_align_celeba/005395.jpg",
+          "Data/img_align_celeba/006381.jpg"
+        ]
+      },
+      "forget_id": 1375,
+      "hard_retain_ids": [
+        1368,
+        8722,
+        384
+      ],
+      "random_retain_ids": [
+        5221,
+        5982,
+        7917
+      ],
+      "retain_ids": [
+        1368,
+        8722,
+        384
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=14; mean_top3_distance=0.452890.",
+      "set_name": "Expanded-1375"
+    },
+    {
+      "eval_reference_images": {
+        "1116": [
+          "Data/img_align_celeba/040824.jpg",
+          "Data/img_align_celeba/042326.jpg",
+          "Data/img_align_celeba/053126.jpg"
+        ],
+        "2877": [
+          "Data/img_align_celeba/031347.jpg",
+          "Data/img_align_celeba/035596.jpg",
+          "Data/img_align_celeba/039433.jpg"
+        ],
+        "4534": [
+          "Data/img_align_celeba/032341.jpg",
+          "Data/img_align_celeba/035763.jpg",
+          "Data/img_align_celeba/036971.jpg"
+        ],
+        "4600": [
+          "Data/img_align_celeba/023055.jpg",
+          "Data/img_align_celeba/023691.jpg",
+          "Data/img_align_celeba/025315.jpg"
+        ],
+        "7237": [
+          "Data/img_align_celeba/006782.jpg",
+          "Data/img_align_celeba/012556.jpg",
+          "Data/img_align_celeba/014695.jpg"
+        ],
+        "7892": [
+          "Data/img_align_celeba/004902.jpg",
+          "Data/img_align_celeba/008752.jpg",
+          "Data/img_align_celeba/011911.jpg"
+        ],
+        "9532": [
+          "Data/img_align_celeba/041742.jpg",
+          "Data/img_align_celeba/043247.jpg",
+          "Data/img_align_celeba/047485.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.45397082964579266,
+      "expanded_rank": 15,
+      "fit_reference_images": {
+        "1116": [
+          "Data/img_align_celeba/000943.jpg",
+          "Data/img_align_celeba/002831.jpg",
+          "Data/img_align_celeba/017883.jpg"
+        ],
+        "2877": [
+          "Data/img_align_celeba/009385.jpg",
+          "Data/img_align_celeba/016296.jpg",
+          "Data/img_align_celeba/023734.jpg"
+        ],
+        "4534": [
+          "Data/img_align_celeba/001751.jpg",
+          "Data/img_align_celeba/002502.jpg",
+          "Data/img_align_celeba/017046.jpg"
+        ],
+        "4600": [
+          "Data/img_align_celeba/007784.jpg",
+          "Data/img_align_celeba/015919.jpg",
+          "Data/img_align_celeba/016507.jpg"
+        ],
+        "7237": [
+          "Data/img_align_celeba/003276.jpg",
+          "Data/img_align_celeba/004584.jpg",
+          "Data/img_align_celeba/004732.jpg"
+        ],
+        "7892": [
+          "Data/img_align_celeba/001273.jpg",
+          "Data/img_align_celeba/003279.jpg",
+          "Data/img_align_celeba/004875.jpg"
+        ],
+        "9532": [
+          "Data/img_align_celeba/015479.jpg",
+          "Data/img_align_celeba/025974.jpg",
+          "Data/img_align_celeba/039346.jpg"
+        ]
+      },
+      "forget_id": 2877,
+      "hard_retain_ids": [
+        1116,
+        4600,
+        7237
+      ],
+      "random_retain_ids": [
+        4534,
+        7892,
+        9532
+      ],
+      "retain_ids": [
+        1116,
+        4600,
+        7237
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=15; mean_top3_distance=0.453971.",
+      "set_name": "Expanded-2877"
+    },
+    {
+      "eval_reference_images": {
+        "1116": [
+          "Data/img_align_celeba/040824.jpg",
+          "Data/img_align_celeba/042326.jpg",
+          "Data/img_align_celeba/053126.jpg"
+        ],
+        "2877": [
+          "Data/img_align_celeba/031347.jpg",
+          "Data/img_align_celeba/035596.jpg",
+          "Data/img_align_celeba/039433.jpg"
+        ],
+        "4095": [
+          "Data/img_align_celeba/070134.jpg",
+          "Data/img_align_celeba/078057.jpg",
+          "Data/img_align_celeba/093266.jpg"
+        ],
+        "4237": [
+          "Data/img_align_celeba/026511.jpg",
+          "Data/img_align_celeba/030888.jpg",
+          "Data/img_align_celeba/055469.jpg"
+        ],
+        "4600": [
+          "Data/img_align_celeba/023055.jpg",
+          "Data/img_align_celeba/023691.jpg",
+          "Data/img_align_celeba/025315.jpg"
+        ],
+        "7237": [
+          "Data/img_align_celeba/006782.jpg",
+          "Data/img_align_celeba/012556.jpg",
+          "Data/img_align_celeba/014695.jpg"
+        ],
+        "8916": [
+          "Data/img_align_celeba/016409.jpg",
+          "Data/img_align_celeba/024123.jpg",
+          "Data/img_align_celeba/025935.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4559849500656128,
+      "expanded_rank": 16,
+      "fit_reference_images": {
+        "1116": [
+          "Data/img_align_celeba/000943.jpg",
+          "Data/img_align_celeba/002831.jpg",
+          "Data/img_align_celeba/017883.jpg"
+        ],
+        "2877": [
+          "Data/img_align_celeba/009385.jpg",
+          "Data/img_align_celeba/016296.jpg",
+          "Data/img_align_celeba/023734.jpg"
+        ],
+        "4095": [
+          "Data/img_align_celeba/031984.jpg",
+          "Data/img_align_celeba/036978.jpg",
+          "Data/img_align_celeba/062304.jpg"
+        ],
+        "4237": [
+          "Data/img_align_celeba/005250.jpg",
+          "Data/img_align_celeba/015149.jpg",
+          "Data/img_align_celeba/024454.jpg"
+        ],
+        "4600": [
+          "Data/img_align_celeba/007784.jpg",
+          "Data/img_align_celeba/015919.jpg",
+          "Data/img_align_celeba/016507.jpg"
+        ],
+        "7237": [
+          "Data/img_align_celeba/003276.jpg",
+          "Data/img_align_celeba/004584.jpg",
+          "Data/img_align_celeba/004732.jpg"
+        ],
+        "8916": [
+          "Data/img_align_celeba/000475.jpg",
+          "Data/img_align_celeba/006148.jpg",
+          "Data/img_align_celeba/016337.jpg"
+        ]
+      },
+      "forget_id": 1116,
+      "hard_retain_ids": [
+        2877,
+        4600,
+        7237
+      ],
+      "random_retain_ids": [
+        4095,
+        8916,
+        4237
+      ],
+      "retain_ids": [
+        2877,
+        4600,
+        7237
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=16; mean_top3_distance=0.455985.",
+      "set_name": "Expanded-1116"
+    },
+    {
+      "eval_reference_images": {
+        "3882": [
+          "Data/img_align_celeba/023456.jpg",
+          "Data/img_align_celeba/024284.jpg",
+          "Data/img_align_celeba/028021.jpg"
+        ],
+        "3972": [
+          "Data/img_align_celeba/048574.jpg",
+          "Data/img_align_celeba/063132.jpg",
+          "Data/img_align_celeba/066777.jpg"
+        ],
+        "4011": [
+          "Data/img_align_celeba/022158.jpg",
+          "Data/img_align_celeba/045988.jpg",
+          "Data/img_align_celeba/057644.jpg"
+        ],
+        "4015": [
+          "Data/img_align_celeba/032501.jpg",
+          "Data/img_align_celeba/050774.jpg",
+          "Data/img_align_celeba/056787.jpg"
+        ],
+        "4016": [
+          "Data/img_align_celeba/045159.jpg",
+          "Data/img_align_celeba/049127.jpg",
+          "Data/img_align_celeba/066819.jpg"
+        ],
+        "6836": [
+          "Data/img_align_celeba/009702.jpg",
+          "Data/img_align_celeba/010380.jpg",
+          "Data/img_align_celeba/010521.jpg"
+        ],
+        "6925": [
+          "Data/img_align_celeba/019105.jpg",
+          "Data/img_align_celeba/028291.jpg",
+          "Data/img_align_celeba/035906.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4561898907025655,
+      "expanded_rank": 17,
+      "fit_reference_images": {
+        "3882": [
+          "Data/img_align_celeba/016863.jpg",
+          "Data/img_align_celeba/018639.jpg",
+          "Data/img_align_celeba/020505.jpg"
+        ],
+        "3972": [
+          "Data/img_align_celeba/002566.jpg",
+          "Data/img_align_celeba/005100.jpg",
+          "Data/img_align_celeba/035103.jpg"
+        ],
+        "4011": [
+          "Data/img_align_celeba/000788.jpg",
+          "Data/img_align_celeba/005360.jpg",
+          "Data/img_align_celeba/019720.jpg"
+        ],
+        "4015": [
+          "Data/img_align_celeba/009833.jpg",
+          "Data/img_align_celeba/015797.jpg",
+          "Data/img_align_celeba/025632.jpg"
+        ],
+        "4016": [
+          "Data/img_align_celeba/006476.jpg",
+          "Data/img_align_celeba/014021.jpg",
+          "Data/img_align_celeba/034114.jpg"
+        ],
+        "6836": [
+          "Data/img_align_celeba/003512.jpg",
+          "Data/img_align_celeba/003716.jpg",
+          "Data/img_align_celeba/003892.jpg"
+        ],
+        "6925": [
+          "Data/img_align_celeba/004077.jpg",
+          "Data/img_align_celeba/010754.jpg",
+          "Data/img_align_celeba/016069.jpg"
+        ]
+      },
+      "forget_id": 4015,
+      "hard_retain_ids": [
+        4016,
+        3882,
+        6836
+      ],
+      "random_retain_ids": [
+        6925,
+        4011,
+        3972
+      ],
+      "retain_ids": [
+        4016,
+        3882,
+        6836
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=17; mean_top3_distance=0.456190.",
+      "set_name": "Expanded-4015"
+    },
+    {
+      "eval_reference_images": {
+        "222": [
+          "Data/img_align_celeba/016313.jpg",
+          "Data/img_align_celeba/035502.jpg",
+          "Data/img_align_celeba/036967.jpg"
+        ],
+        "2446": [
+          "Data/img_align_celeba/013817.jpg",
+          "Data/img_align_celeba/020559.jpg",
+          "Data/img_align_celeba/030426.jpg"
+        ],
+        "507": [
+          "Data/img_align_celeba/047953.jpg",
+          "Data/img_align_celeba/065840.jpg",
+          "Data/img_align_celeba/068337.jpg"
+        ],
+        "6971": [
+          "Data/img_align_celeba/013948.jpg",
+          "Data/img_align_celeba/018091.jpg",
+          "Data/img_align_celeba/020201.jpg"
+        ],
+        "7770": [
+          "Data/img_align_celeba/028535.jpg",
+          "Data/img_align_celeba/036483.jpg",
+          "Data/img_align_celeba/038295.jpg"
+        ],
+        "9007": [
+          "Data/img_align_celeba/016710.jpg",
+          "Data/img_align_celeba/017734.jpg",
+          "Data/img_align_celeba/025605.jpg"
+        ],
+        "955": [
+          "Data/img_align_celeba/015701.jpg",
+          "Data/img_align_celeba/024077.jpg",
+          "Data/img_align_celeba/026925.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4574554165204366,
+      "expanded_rank": 18,
+      "fit_reference_images": {
+        "222": [
+          "Data/img_align_celeba/002138.jpg",
+          "Data/img_align_celeba/009224.jpg",
+          "Data/img_align_celeba/011698.jpg"
+        ],
+        "2446": [
+          "Data/img_align_celeba/001255.jpg",
+          "Data/img_align_celeba/005898.jpg",
+          "Data/img_align_celeba/006542.jpg"
+        ],
+        "507": [
+          "Data/img_align_celeba/000994.jpg",
+          "Data/img_align_celeba/004187.jpg",
+          "Data/img_align_celeba/026720.jpg"
+        ],
+        "6971": [
+          "Data/img_align_celeba/001330.jpg",
+          "Data/img_align_celeba/003537.jpg",
+          "Data/img_align_celeba/010066.jpg"
+        ],
+        "7770": [
+          "Data/img_align_celeba/004347.jpg",
+          "Data/img_align_celeba/016733.jpg",
+          "Data/img_align_celeba/027453.jpg"
+        ],
+        "9007": [
+          "Data/img_align_celeba/007889.jpg",
+          "Data/img_align_celeba/014397.jpg",
+          "Data/img_align_celeba/015304.jpg"
+        ],
+        "955": [
+          "Data/img_align_celeba/005997.jpg",
+          "Data/img_align_celeba/009550.jpg",
+          "Data/img_align_celeba/013065.jpg"
+        ]
+      },
+      "forget_id": 9007,
+      "hard_retain_ids": [
+        507,
+        7770,
+        222
+      ],
+      "random_retain_ids": [
+        6971,
+        2446,
+        955
+      ],
+      "retain_ids": [
+        507,
+        7770,
+        222
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=18; mean_top3_distance=0.457455.",
+      "set_name": "Expanded-9007"
+    },
+    {
+      "eval_reference_images": {
+        "238": [
+          "Data/img_align_celeba/010355.jpg",
+          "Data/img_align_celeba/015935.jpg",
+          "Data/img_align_celeba/017708.jpg"
+        ],
+        "4631": [
+          "Data/img_align_celeba/029405.jpg",
+          "Data/img_align_celeba/052137.jpg",
+          "Data/img_align_celeba/055987.jpg"
+        ],
+        "4873": [
+          "Data/img_align_celeba/009226.jpg",
+          "Data/img_align_celeba/010272.jpg",
+          "Data/img_align_celeba/010459.jpg"
+        ],
+        "5341": [
+          "Data/img_align_celeba/028646.jpg",
+          "Data/img_align_celeba/029870.jpg",
+          "Data/img_align_celeba/031080.jpg"
+        ],
+        "900": [
+          "Data/img_align_celeba/040387.jpg",
+          "Data/img_align_celeba/045158.jpg",
+          "Data/img_align_celeba/051647.jpg"
+        ],
+        "909": [
+          "Data/img_align_celeba/015684.jpg",
+          "Data/img_align_celeba/034885.jpg",
+          "Data/img_align_celeba/035622.jpg"
+        ],
+        "9671": [
+          "Data/img_align_celeba/046815.jpg",
+          "Data/img_align_celeba/050824.jpg",
+          "Data/img_align_celeba/057790.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.45842379331588745,
+      "expanded_rank": 19,
+      "fit_reference_images": {
+        "238": [
+          "Data/img_align_celeba/005851.jpg",
+          "Data/img_align_celeba/007368.jpg",
+          "Data/img_align_celeba/007782.jpg"
+        ],
+        "4631": [
+          "Data/img_align_celeba/009591.jpg",
+          "Data/img_align_celeba/012566.jpg",
+          "Data/img_align_celeba/028189.jpg"
+        ],
+        "4873": [
+          "Data/img_align_celeba/000582.jpg",
+          "Data/img_align_celeba/001812.jpg",
+          "Data/img_align_celeba/008641.jpg"
+        ],
+        "5341": [
+          "Data/img_align_celeba/000649.jpg",
+          "Data/img_align_celeba/009818.jpg",
+          "Data/img_align_celeba/023258.jpg"
+        ],
+        "900": [
+          "Data/img_align_celeba/006276.jpg",
+          "Data/img_align_celeba/017187.jpg",
+          "Data/img_align_celeba/020153.jpg"
+        ],
+        "909": [
+          "Data/img_align_celeba/006291.jpg",
+          "Data/img_align_celeba/010471.jpg",
+          "Data/img_align_celeba/011691.jpg"
+        ],
+        "9671": [
+          "Data/img_align_celeba/010223.jpg",
+          "Data/img_align_celeba/024525.jpg",
+          "Data/img_align_celeba/037816.jpg"
+        ]
+      },
+      "forget_id": 900,
+      "hard_retain_ids": [
+        909,
+        238,
+        9671
+      ],
+      "random_retain_ids": [
+        5341,
+        4631,
+        4873
+      ],
+      "retain_ids": [
+        909,
+        238,
+        9671
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=19; mean_top3_distance=0.458424.",
+      "set_name": "Expanded-900"
+    },
+    {
+      "eval_reference_images": {
+        "1368": [
+          "Data/img_align_celeba/008132.jpg",
+          "Data/img_align_celeba/016451.jpg",
+          "Data/img_align_celeba/042839.jpg"
+        ],
+        "1375": [
+          "Data/img_align_celeba/029236.jpg",
+          "Data/img_align_celeba/032521.jpg",
+          "Data/img_align_celeba/044063.jpg"
+        ],
+        "1420": [
+          "Data/img_align_celeba/024603.jpg",
+          "Data/img_align_celeba/027596.jpg",
+          "Data/img_align_celeba/037207.jpg"
+        ],
+        "1727": [
+          "Data/img_align_celeba/031438.jpg",
+          "Data/img_align_celeba/040813.jpg",
+          "Data/img_align_celeba/060785.jpg"
+        ],
+        "384": [
+          "Data/img_align_celeba/015512.jpg",
+          "Data/img_align_celeba/016341.jpg",
+          "Data/img_align_celeba/028984.jpg"
+        ],
+        "7261": [
+          "Data/img_align_celeba/014542.jpg",
+          "Data/img_align_celeba/014839.jpg",
+          "Data/img_align_celeba/015010.jpg"
+        ],
+        "8722": [
+          "Data/img_align_celeba/008315.jpg",
+          "Data/img_align_celeba/035619.jpg",
+          "Data/img_align_celeba/037762.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.45900193850199383,
+      "expanded_rank": 20,
+      "fit_reference_images": {
+        "1368": [
+          "Data/img_align_celeba/000940.jpg",
+          "Data/img_align_celeba/000976.jpg",
+          "Data/img_align_celeba/003721.jpg"
+        ],
+        "1375": [
+          "Data/img_align_celeba/014198.jpg",
+          "Data/img_align_celeba/017241.jpg",
+          "Data/img_align_celeba/027334.jpg"
+        ],
+        "1420": [
+          "Data/img_align_celeba/007597.jpg",
+          "Data/img_align_celeba/012808.jpg",
+          "Data/img_align_celeba/016770.jpg"
+        ],
+        "1727": [
+          "Data/img_align_celeba/014940.jpg",
+          "Data/img_align_celeba/021053.jpg",
+          "Data/img_align_celeba/024008.jpg"
+        ],
+        "384": [
+          "Data/img_align_celeba/000471.jpg",
+          "Data/img_align_celeba/006033.jpg",
+          "Data/img_align_celeba/009526.jpg"
+        ],
+        "7261": [
+          "Data/img_align_celeba/001941.jpg",
+          "Data/img_align_celeba/002429.jpg",
+          "Data/img_align_celeba/013176.jpg"
+        ],
+        "8722": [
+          "Data/img_align_celeba/000819.jpg",
+          "Data/img_align_celeba/005395.jpg",
+          "Data/img_align_celeba/006381.jpg"
+        ]
+      },
+      "forget_id": 1368,
+      "hard_retain_ids": [
+        1375,
+        8722,
+        384
+      ],
+      "random_retain_ids": [
+        1727,
+        1420,
+        7261
+      ],
+      "retain_ids": [
+        1375,
+        8722,
+        384
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=20; mean_top3_distance=0.459002.",
+      "set_name": "Expanded-1368"
+    },
+    {
+      "eval_reference_images": {
+        "238": [
+          "Data/img_align_celeba/010355.jpg",
+          "Data/img_align_celeba/015935.jpg",
+          "Data/img_align_celeba/017708.jpg"
+        ],
+        "294": [
+          "Data/img_align_celeba/087298.jpg",
+          "Data/img_align_celeba/091201.jpg",
+          "Data/img_align_celeba/096793.jpg"
+        ],
+        "4416": [
+          "Data/img_align_celeba/021161.jpg",
+          "Data/img_align_celeba/023310.jpg",
+          "Data/img_align_celeba/023864.jpg"
+        ],
+        "610": [
+          "Data/img_align_celeba/033908.jpg",
+          "Data/img_align_celeba/036408.jpg",
+          "Data/img_align_celeba/043072.jpg"
+        ],
+        "6119": [
+          "Data/img_align_celeba/021243.jpg",
+          "Data/img_align_celeba/028889.jpg",
+          "Data/img_align_celeba/033419.jpg"
+        ],
+        "900": [
+          "Data/img_align_celeba/040387.jpg",
+          "Data/img_align_celeba/045158.jpg",
+          "Data/img_align_celeba/051647.jpg"
+        ],
+        "909": [
+          "Data/img_align_celeba/015684.jpg",
+          "Data/img_align_celeba/034885.jpg",
+          "Data/img_align_celeba/035622.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.460122287273407,
+      "expanded_rank": 21,
+      "fit_reference_images": {
+        "238": [
+          "Data/img_align_celeba/005851.jpg",
+          "Data/img_align_celeba/007368.jpg",
+          "Data/img_align_celeba/007782.jpg"
+        ],
+        "294": [
+          "Data/img_align_celeba/020689.jpg",
+          "Data/img_align_celeba/056071.jpg",
+          "Data/img_align_celeba/070212.jpg"
+        ],
+        "4416": [
+          "Data/img_align_celeba/004544.jpg",
+          "Data/img_align_celeba/006174.jpg",
+          "Data/img_align_celeba/015697.jpg"
+        ],
+        "610": [
+          "Data/img_align_celeba/020620.jpg",
+          "Data/img_align_celeba/028934.jpg",
+          "Data/img_align_celeba/030808.jpg"
+        ],
+        "6119": [
+          "Data/img_align_celeba/005912.jpg",
+          "Data/img_align_celeba/010975.jpg",
+          "Data/img_align_celeba/013029.jpg"
+        ],
+        "900": [
+          "Data/img_align_celeba/006276.jpg",
+          "Data/img_align_celeba/017187.jpg",
+          "Data/img_align_celeba/020153.jpg"
+        ],
+        "909": [
+          "Data/img_align_celeba/006291.jpg",
+          "Data/img_align_celeba/010471.jpg",
+          "Data/img_align_celeba/011691.jpg"
+        ]
+      },
+      "forget_id": 909,
+      "hard_retain_ids": [
+        900,
+        238,
+        610
+      ],
+      "random_retain_ids": [
+        294,
+        4416,
+        6119
+      ],
+      "retain_ids": [
+        900,
+        238,
+        610
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=21; mean_top3_distance=0.460122.",
+      "set_name": "Expanded-909"
+    },
+    {
+      "eval_reference_images": {
+        "3882": [
+          "Data/img_align_celeba/023456.jpg",
+          "Data/img_align_celeba/024284.jpg",
+          "Data/img_align_celeba/028021.jpg"
+        ],
+        "4015": [
+          "Data/img_align_celeba/032501.jpg",
+          "Data/img_align_celeba/050774.jpg",
+          "Data/img_align_celeba/056787.jpg"
+        ],
+        "4016": [
+          "Data/img_align_celeba/045159.jpg",
+          "Data/img_align_celeba/049127.jpg",
+          "Data/img_align_celeba/066819.jpg"
+        ],
+        "4112": [
+          "Data/img_align_celeba/034984.jpg",
+          "Data/img_align_celeba/035610.jpg",
+          "Data/img_align_celeba/037970.jpg"
+        ],
+        "4887": [
+          "Data/img_align_celeba/003646.jpg",
+          "Data/img_align_celeba/009795.jpg",
+          "Data/img_align_celeba/018583.jpg"
+        ],
+        "7380": [
+          "Data/img_align_celeba/028642.jpg",
+          "Data/img_align_celeba/029194.jpg",
+          "Data/img_align_celeba/033604.jpg"
+        ],
+        "7449": [
+          "Data/img_align_celeba/019569.jpg",
+          "Data/img_align_celeba/028110.jpg",
+          "Data/img_align_celeba/041699.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4605426987012227,
+      "expanded_rank": 22,
+      "fit_reference_images": {
+        "3882": [
+          "Data/img_align_celeba/016863.jpg",
+          "Data/img_align_celeba/018639.jpg",
+          "Data/img_align_celeba/020505.jpg"
+        ],
+        "4015": [
+          "Data/img_align_celeba/009833.jpg",
+          "Data/img_align_celeba/015797.jpg",
+          "Data/img_align_celeba/025632.jpg"
+        ],
+        "4016": [
+          "Data/img_align_celeba/006476.jpg",
+          "Data/img_align_celeba/014021.jpg",
+          "Data/img_align_celeba/034114.jpg"
+        ],
+        "4112": [
+          "Data/img_align_celeba/017446.jpg",
+          "Data/img_align_celeba/022258.jpg",
+          "Data/img_align_celeba/028830.jpg"
+        ],
+        "4887": [
+          "Data/img_align_celeba/000116.jpg",
+          "Data/img_align_celeba/000838.jpg",
+          "Data/img_align_celeba/002718.jpg"
+        ],
+        "7380": [
+          "Data/img_align_celeba/000875.jpg",
+          "Data/img_align_celeba/005467.jpg",
+          "Data/img_align_celeba/023933.jpg"
+        ],
+        "7449": [
+          "Data/img_align_celeba/003150.jpg",
+          "Data/img_align_celeba/010528.jpg",
+          "Data/img_align_celeba/018228.jpg"
+        ]
+      },
+      "forget_id": 4016,
+      "hard_retain_ids": [
+        4015,
+        3882,
+        7449
+      ],
+      "random_retain_ids": [
+        7380,
+        4112,
+        4887
+      ],
+      "retain_ids": [
+        4015,
+        3882,
+        7449
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=22; mean_top3_distance=0.460543.",
+      "set_name": "Expanded-4016"
+    },
+    {
+      "eval_reference_images": {
+        "10039": [
+          "Data/img_align_celeba/028571.jpg",
+          "Data/img_align_celeba/035526.jpg",
+          "Data/img_align_celeba/043124.jpg"
+        ],
+        "1426": [
+          "Data/img_align_celeba/046033.jpg",
+          "Data/img_align_celeba/054861.jpg",
+          "Data/img_align_celeba/061317.jpg"
+        ],
+        "289": [
+          "Data/img_align_celeba/026710.jpg",
+          "Data/img_align_celeba/034994.jpg",
+          "Data/img_align_celeba/038904.jpg"
+        ],
+        "4040": [
+          "Data/img_align_celeba/046128.jpg",
+          "Data/img_align_celeba/058657.jpg",
+          "Data/img_align_celeba/062013.jpg"
+        ],
+        "6691": [
+          "Data/img_align_celeba/020596.jpg",
+          "Data/img_align_celeba/027624.jpg",
+          "Data/img_align_celeba/032674.jpg"
+        ],
+        "6951": [
+          "Data/img_align_celeba/014411.jpg",
+          "Data/img_align_celeba/019221.jpg",
+          "Data/img_align_celeba/021223.jpg"
+        ],
+        "7926": [
+          "Data/img_align_celeba/034895.jpg",
+          "Data/img_align_celeba/038924.jpg",
+          "Data/img_align_celeba/046009.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.464380145072937,
+      "expanded_rank": 23,
+      "fit_reference_images": {
+        "10039": [
+          "Data/img_align_celeba/016363.jpg",
+          "Data/img_align_celeba/018058.jpg",
+          "Data/img_align_celeba/026687.jpg"
+        ],
+        "1426": [
+          "Data/img_align_celeba/022283.jpg",
+          "Data/img_align_celeba/024590.jpg",
+          "Data/img_align_celeba/031897.jpg"
+        ],
+        "289": [
+          "Data/img_align_celeba/005009.jpg",
+          "Data/img_align_celeba/014005.jpg",
+          "Data/img_align_celeba/024678.jpg"
+        ],
+        "4040": [
+          "Data/img_align_celeba/019926.jpg",
+          "Data/img_align_celeba/029974.jpg",
+          "Data/img_align_celeba/042748.jpg"
+        ],
+        "6691": [
+          "Data/img_align_celeba/000599.jpg",
+          "Data/img_align_celeba/014836.jpg",
+          "Data/img_align_celeba/016473.jpg"
+        ],
+        "6951": [
+          "Data/img_align_celeba/000828.jpg",
+          "Data/img_align_celeba/002287.jpg",
+          "Data/img_align_celeba/002350.jpg"
+        ],
+        "7926": [
+          "Data/img_align_celeba/005856.jpg",
+          "Data/img_align_celeba/031715.jpg",
+          "Data/img_align_celeba/032919.jpg"
+        ]
+      },
+      "forget_id": 10039,
+      "hard_retain_ids": [
+        4040,
+        6951,
+        1426
+      ],
+      "random_retain_ids": [
+        289,
+        7926,
+        6691
+      ],
+      "retain_ids": [
+        4040,
+        6951,
+        1426
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=23; mean_top3_distance=0.464380.",
+      "set_name": "Expanded-10039"
+    },
+    {
+      "eval_reference_images": {
+        "1221": [
+          "Data/img_align_celeba/013221.jpg",
+          "Data/img_align_celeba/021228.jpg",
+          "Data/img_align_celeba/025427.jpg"
+        ],
+        "14": [
+          "Data/img_align_celeba/051809.jpg",
+          "Data/img_align_celeba/052645.jpg",
+          "Data/img_align_celeba/055899.jpg"
+        ],
+        "3014": [
+          "Data/img_align_celeba/020073.jpg",
+          "Data/img_align_celeba/024208.jpg",
+          "Data/img_align_celeba/029019.jpg"
+        ],
+        "4056": [
+          "Data/img_align_celeba/019552.jpg",
+          "Data/img_align_celeba/039194.jpg",
+          "Data/img_align_celeba/058044.jpg"
+        ],
+        "7110": [
+          "Data/img_align_celeba/040586.jpg",
+          "Data/img_align_celeba/056798.jpg",
+          "Data/img_align_celeba/063621.jpg"
+        ],
+        "7113": [
+          "Data/img_align_celeba/017276.jpg",
+          "Data/img_align_celeba/031219.jpg",
+          "Data/img_align_celeba/041707.jpg"
+        ],
+        "7917": [
+          "Data/img_align_celeba/030976.jpg",
+          "Data/img_align_celeba/040288.jpg",
+          "Data/img_align_celeba/043332.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4694923559824626,
+      "expanded_rank": 24,
+      "fit_reference_images": {
+        "1221": [
+          "Data/img_align_celeba/001061.jpg",
+          "Data/img_align_celeba/009587.jpg",
+          "Data/img_align_celeba/010254.jpg"
+        ],
+        "14": [
+          "Data/img_align_celeba/032486.jpg",
+          "Data/img_align_celeba/041293.jpg",
+          "Data/img_align_celeba/044192.jpg"
+        ],
+        "3014": [
+          "Data/img_align_celeba/006450.jpg",
+          "Data/img_align_celeba/009835.jpg",
+          "Data/img_align_celeba/014036.jpg"
+        ],
+        "4056": [
+          "Data/img_align_celeba/004153.jpg",
+          "Data/img_align_celeba/006306.jpg",
+          "Data/img_align_celeba/008801.jpg"
+        ],
+        "7110": [
+          "Data/img_align_celeba/003052.jpg",
+          "Data/img_align_celeba/008802.jpg",
+          "Data/img_align_celeba/020607.jpg"
+        ],
+        "7113": [
+          "Data/img_align_celeba/009761.jpg",
+          "Data/img_align_celeba/014061.jpg",
+          "Data/img_align_celeba/014334.jpg"
+        ],
+        "7917": [
+          "Data/img_align_celeba/001640.jpg",
+          "Data/img_align_celeba/011594.jpg",
+          "Data/img_align_celeba/014771.jpg"
+        ]
+      },
+      "forget_id": 7110,
+      "hard_retain_ids": [
+        7113,
+        3014,
+        1221
+      ],
+      "random_retain_ids": [
+        14,
+        7917,
+        4056
+      ],
+      "retain_ids": [
+        7113,
+        3014,
+        1221
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=24; mean_top3_distance=0.469492.",
+      "set_name": "Expanded-7110"
+    },
+    {
+      "eval_reference_images": {
+        "3077": [
+          "Data/img_align_celeba/032381.jpg",
+          "Data/img_align_celeba/041928.jpg",
+          "Data/img_align_celeba/063846.jpg"
+        ],
+        "3078": [
+          "Data/img_align_celeba/012138.jpg",
+          "Data/img_align_celeba/013308.jpg",
+          "Data/img_align_celeba/015489.jpg"
+        ],
+        "4367": [
+          "Data/img_align_celeba/014316.jpg",
+          "Data/img_align_celeba/023353.jpg",
+          "Data/img_align_celeba/026008.jpg"
+        ],
+        "5135": [
+          "Data/img_align_celeba/015498.jpg",
+          "Data/img_align_celeba/027236.jpg",
+          "Data/img_align_celeba/035296.jpg"
+        ],
+        "5240": [
+          "Data/img_align_celeba/010208.jpg",
+          "Data/img_align_celeba/024731.jpg",
+          "Data/img_align_celeba/033531.jpg"
+        ],
+        "7460": [
+          "Data/img_align_celeba/009031.jpg",
+          "Data/img_align_celeba/012732.jpg",
+          "Data/img_align_celeba/013711.jpg"
+        ],
+        "8660": [
+          "Data/img_align_celeba/042751.jpg",
+          "Data/img_align_celeba/046029.jpg",
+          "Data/img_align_celeba/054054.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.4702966610590617,
+      "expanded_rank": 25,
+      "fit_reference_images": {
+        "3077": [
+          "Data/img_align_celeba/005025.jpg",
+          "Data/img_align_celeba/023960.jpg",
+          "Data/img_align_celeba/029773.jpg"
+        ],
+        "3078": [
+          "Data/img_align_celeba/000865.jpg",
+          "Data/img_align_celeba/001772.jpg",
+          "Data/img_align_celeba/008204.jpg"
+        ],
+        "4367": [
+          "Data/img_align_celeba/003748.jpg",
+          "Data/img_align_celeba/005091.jpg",
+          "Data/img_align_celeba/012724.jpg"
+        ],
+        "5135": [
+          "Data/img_align_celeba/013235.jpg",
+          "Data/img_align_celeba/013725.jpg",
+          "Data/img_align_celeba/014601.jpg"
+        ],
+        "5240": [
+          "Data/img_align_celeba/001600.jpg",
+          "Data/img_align_celeba/002530.jpg",
+          "Data/img_align_celeba/008432.jpg"
+        ],
+        "7460": [
+          "Data/img_align_celeba/004134.jpg",
+          "Data/img_align_celeba/007111.jpg",
+          "Data/img_align_celeba/008215.jpg"
+        ],
+        "8660": [
+          "Data/img_align_celeba/013400.jpg",
+          "Data/img_align_celeba/039022.jpg",
+          "Data/img_align_celeba/039936.jpg"
+        ]
+      },
+      "forget_id": 3077,
+      "hard_retain_ids": [
+        3078,
+        5240,
+        4367
+      ],
+      "random_retain_ids": [
+        7460,
+        5135,
+        8660
+      ],
+      "retain_ids": [
+        3078,
+        5240,
+        4367
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=25; mean_top3_distance=0.470297.",
+      "set_name": "Expanded-3077"
+    },
+    {
+      "eval_reference_images": {
+        "1351": [
+          "Data/img_align_celeba/024515.jpg",
+          "Data/img_align_celeba/025977.jpg",
+          "Data/img_align_celeba/027569.jpg"
+        ],
+        "2909": [
+          "Data/img_align_celeba/016839.jpg",
+          "Data/img_align_celeba/020789.jpg",
+          "Data/img_align_celeba/022240.jpg"
+        ],
+        "437": [
+          "Data/img_align_celeba/010711.jpg",
+          "Data/img_align_celeba/027183.jpg",
+          "Data/img_align_celeba/038238.jpg"
+        ],
+        "4936": [
+          "Data/img_align_celeba/042145.jpg",
+          "Data/img_align_celeba/046770.jpg",
+          "Data/img_align_celeba/046887.jpg"
+        ],
+        "7782": [
+          "Data/img_align_celeba/031974.jpg",
+          "Data/img_align_celeba/044849.jpg",
+          "Data/img_align_celeba/051566.jpg"
+        ],
+        "850": [
+          "Data/img_align_celeba/048181.jpg",
+          "Data/img_align_celeba/049814.jpg",
+          "Data/img_align_celeba/052342.jpg"
+        ],
+        "931": [
+          "Data/img_align_celeba/024809.jpg",
+          "Data/img_align_celeba/031804.jpg",
+          "Data/img_align_celeba/033308.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.47063299020131427,
+      "expanded_rank": 26,
+      "fit_reference_images": {
+        "1351": [
+          "Data/img_align_celeba/001898.jpg",
+          "Data/img_align_celeba/003787.jpg",
+          "Data/img_align_celeba/016411.jpg"
+        ],
+        "2909": [
+          "Data/img_align_celeba/004893.jpg",
+          "Data/img_align_celeba/006323.jpg",
+          "Data/img_align_celeba/009941.jpg"
+        ],
+        "437": [
+          "Data/img_align_celeba/004934.jpg",
+          "Data/img_align_celeba/006463.jpg",
+          "Data/img_align_celeba/010175.jpg"
+        ],
+        "4936": [
+          "Data/img_align_celeba/003841.jpg",
+          "Data/img_align_celeba/015667.jpg",
+          "Data/img_align_celeba/021490.jpg"
+        ],
+        "7782": [
+          "Data/img_align_celeba/004631.jpg",
+          "Data/img_align_celeba/006454.jpg",
+          "Data/img_align_celeba/014153.jpg"
+        ],
+        "850": [
+          "Data/img_align_celeba/018184.jpg",
+          "Data/img_align_celeba/025293.jpg",
+          "Data/img_align_celeba/035149.jpg"
+        ],
+        "931": [
+          "Data/img_align_celeba/005621.jpg",
+          "Data/img_align_celeba/007705.jpg",
+          "Data/img_align_celeba/008586.jpg"
+        ]
+      },
+      "forget_id": 437,
+      "hard_retain_ids": [
+        931,
+        1351,
+        7782
+      ],
+      "random_retain_ids": [
+        850,
+        2909,
+        4936
+      ],
+      "retain_ids": [
+        931,
+        1351,
+        7782
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=26; mean_top3_distance=0.470633.",
+      "set_name": "Expanded-437"
+    },
+    {
+      "eval_reference_images": {
+        "10067": [
+          "Data/img_align_celeba/020011.jpg",
+          "Data/img_align_celeba/037025.jpg",
+          "Data/img_align_celeba/053231.jpg"
+        ],
+        "3077": [
+          "Data/img_align_celeba/032381.jpg",
+          "Data/img_align_celeba/041928.jpg",
+          "Data/img_align_celeba/063846.jpg"
+        ],
+        "3078": [
+          "Data/img_align_celeba/012138.jpg",
+          "Data/img_align_celeba/013308.jpg",
+          "Data/img_align_celeba/015489.jpg"
+        ],
+        "3383": [
+          "Data/img_align_celeba/039131.jpg",
+          "Data/img_align_celeba/041553.jpg",
+          "Data/img_align_celeba/048664.jpg"
+        ],
+        "4343": [
+          "Data/img_align_celeba/027935.jpg",
+          "Data/img_align_celeba/033142.jpg",
+          "Data/img_align_celeba/035928.jpg"
+        ],
+        "4367": [
+          "Data/img_align_celeba/014316.jpg",
+          "Data/img_align_celeba/023353.jpg",
+          "Data/img_align_celeba/026008.jpg"
+        ],
+        "5240": [
+          "Data/img_align_celeba/010208.jpg",
+          "Data/img_align_celeba/024731.jpg",
+          "Data/img_align_celeba/033531.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.47109460830688477,
+      "expanded_rank": 27,
+      "fit_reference_images": {
+        "10067": [
+          "Data/img_align_celeba/001716.jpg",
+          "Data/img_align_celeba/003831.jpg",
+          "Data/img_align_celeba/010511.jpg"
+        ],
+        "3077": [
+          "Data/img_align_celeba/005025.jpg",
+          "Data/img_align_celeba/023960.jpg",
+          "Data/img_align_celeba/029773.jpg"
+        ],
+        "3078": [
+          "Data/img_align_celeba/000865.jpg",
+          "Data/img_align_celeba/001772.jpg",
+          "Data/img_align_celeba/008204.jpg"
+        ],
+        "3383": [
+          "Data/img_align_celeba/012561.jpg",
+          "Data/img_align_celeba/036953.jpg",
+          "Data/img_align_celeba/038438.jpg"
+        ],
+        "4343": [
+          "Data/img_align_celeba/011122.jpg",
+          "Data/img_align_celeba/018773.jpg",
+          "Data/img_align_celeba/019186.jpg"
+        ],
+        "4367": [
+          "Data/img_align_celeba/003748.jpg",
+          "Data/img_align_celeba/005091.jpg",
+          "Data/img_align_celeba/012724.jpg"
+        ],
+        "5240": [
+          "Data/img_align_celeba/001600.jpg",
+          "Data/img_align_celeba/002530.jpg",
+          "Data/img_align_celeba/008432.jpg"
+        ]
+      },
+      "forget_id": 3078,
+      "hard_retain_ids": [
+        3077,
+        5240,
+        4367
+      ],
+      "random_retain_ids": [
+        10067,
+        3383,
+        4343
+      ],
+      "retain_ids": [
+        3077,
+        5240,
+        4367
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=27; mean_top3_distance=0.471095.",
+      "set_name": "Expanded-3078"
+    },
+    {
+      "eval_reference_images": {
+        "3429": [
+          "Data/img_align_celeba/011236.jpg",
+          "Data/img_align_celeba/021487.jpg",
+          "Data/img_align_celeba/026644.jpg"
+        ],
+        "3693": [
+          "Data/img_align_celeba/005957.jpg",
+          "Data/img_align_celeba/044409.jpg",
+          "Data/img_align_celeba/052457.jpg"
+        ],
+        "3918": [
+          "Data/img_align_celeba/047623.jpg",
+          "Data/img_align_celeba/066152.jpg",
+          "Data/img_align_celeba/071525.jpg"
+        ],
+        "3920": [
+          "Data/img_align_celeba/007199.jpg",
+          "Data/img_align_celeba/014876.jpg",
+          "Data/img_align_celeba/015767.jpg"
+        ],
+        "5747": [
+          "Data/img_align_celeba/021785.jpg",
+          "Data/img_align_celeba/025110.jpg",
+          "Data/img_align_celeba/025636.jpg"
+        ],
+        "6977": [
+          "Data/img_align_celeba/010634.jpg",
+          "Data/img_align_celeba/013206.jpg",
+          "Data/img_align_celeba/025898.jpg"
+        ],
+        "7254": [
+          "Data/img_align_celeba/009658.jpg",
+          "Data/img_align_celeba/011077.jpg",
+          "Data/img_align_celeba/019532.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.47362659374872845,
+      "expanded_rank": 28,
+      "fit_reference_images": {
+        "3429": [
+          "Data/img_align_celeba/003861.jpg",
+          "Data/img_align_celeba/007120.jpg",
+          "Data/img_align_celeba/010026.jpg"
+        ],
+        "3693": [
+          "Data/img_align_celeba/002247.jpg",
+          "Data/img_align_celeba/004143.jpg",
+          "Data/img_align_celeba/004906.jpg"
+        ],
+        "3918": [
+          "Data/img_align_celeba/011549.jpg",
+          "Data/img_align_celeba/024242.jpg",
+          "Data/img_align_celeba/026859.jpg"
+        ],
+        "3920": [
+          "Data/img_align_celeba/000748.jpg",
+          "Data/img_align_celeba/002701.jpg",
+          "Data/img_align_celeba/005256.jpg"
+        ],
+        "5747": [
+          "Data/img_align_celeba/002196.jpg",
+          "Data/img_align_celeba/008715.jpg",
+          "Data/img_align_celeba/010564.jpg"
+        ],
+        "6977": [
+          "Data/img_align_celeba/001706.jpg",
+          "Data/img_align_celeba/004313.jpg",
+          "Data/img_align_celeba/008010.jpg"
+        ],
+        "7254": [
+          "Data/img_align_celeba/003877.jpg",
+          "Data/img_align_celeba/004397.jpg",
+          "Data/img_align_celeba/008265.jpg"
+        ]
+      },
+      "forget_id": 3693,
+      "hard_retain_ids": [
+        3920,
+        3918,
+        5747
+      ],
+      "random_retain_ids": [
+        6977,
+        3429,
+        7254
+      ],
+      "retain_ids": [
+        3920,
+        3918,
+        5747
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=28; mean_top3_distance=0.473627.",
+      "set_name": "Expanded-3693"
+    },
+    {
+      "eval_reference_images": {
+        "10039": [
+          "Data/img_align_celeba/028571.jpg",
+          "Data/img_align_celeba/035526.jpg",
+          "Data/img_align_celeba/043124.jpg"
+        ],
+        "1426": [
+          "Data/img_align_celeba/046033.jpg",
+          "Data/img_align_celeba/054861.jpg",
+          "Data/img_align_celeba/061317.jpg"
+        ],
+        "3684": [
+          "Data/img_align_celeba/050629.jpg",
+          "Data/img_align_celeba/055053.jpg",
+          "Data/img_align_celeba/061612.jpg"
+        ],
+        "4040": [
+          "Data/img_align_celeba/046128.jpg",
+          "Data/img_align_celeba/058657.jpg",
+          "Data/img_align_celeba/062013.jpg"
+        ],
+        "5595": [
+          "Data/img_align_celeba/022577.jpg",
+          "Data/img_align_celeba/026805.jpg",
+          "Data/img_align_celeba/029120.jpg"
+        ],
+        "5973": [
+          "Data/img_align_celeba/024104.jpg",
+          "Data/img_align_celeba/025586.jpg",
+          "Data/img_align_celeba/033458.jpg"
+        ],
+        "6951": [
+          "Data/img_align_celeba/014411.jpg",
+          "Data/img_align_celeba/019221.jpg",
+          "Data/img_align_celeba/021223.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.47390979528427124,
+      "expanded_rank": 29,
+      "fit_reference_images": {
+        "10039": [
+          "Data/img_align_celeba/016363.jpg",
+          "Data/img_align_celeba/018058.jpg",
+          "Data/img_align_celeba/026687.jpg"
+        ],
+        "1426": [
+          "Data/img_align_celeba/022283.jpg",
+          "Data/img_align_celeba/024590.jpg",
+          "Data/img_align_celeba/031897.jpg"
+        ],
+        "3684": [
+          "Data/img_align_celeba/008063.jpg",
+          "Data/img_align_celeba/027098.jpg",
+          "Data/img_align_celeba/034085.jpg"
+        ],
+        "4040": [
+          "Data/img_align_celeba/019926.jpg",
+          "Data/img_align_celeba/029974.jpg",
+          "Data/img_align_celeba/042748.jpg"
+        ],
+        "5595": [
+          "Data/img_align_celeba/001660.jpg",
+          "Data/img_align_celeba/013350.jpg",
+          "Data/img_align_celeba/014468.jpg"
+        ],
+        "5973": [
+          "Data/img_align_celeba/007137.jpg",
+          "Data/img_align_celeba/010611.jpg",
+          "Data/img_align_celeba/017313.jpg"
+        ],
+        "6951": [
+          "Data/img_align_celeba/000828.jpg",
+          "Data/img_align_celeba/002287.jpg",
+          "Data/img_align_celeba/002350.jpg"
+        ]
+      },
+      "forget_id": 4040,
+      "hard_retain_ids": [
+        10039,
+        6951,
+        1426
+      ],
+      "random_retain_ids": [
+        5973,
+        3684,
+        5595
+      ],
+      "retain_ids": [
+        10039,
+        6951,
+        1426
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=29; mean_top3_distance=0.473910.",
+      "set_name": "Expanded-4040"
+    },
+    {
+      "eval_reference_images": {
+        "102": [
+          "Data/img_align_celeba/024132.jpg",
+          "Data/img_align_celeba/031792.jpg",
+          "Data/img_align_celeba/045696.jpg"
+        ],
+        "1818": [
+          "Data/img_align_celeba/052348.jpg",
+          "Data/img_align_celeba/058105.jpg",
+          "Data/img_align_celeba/058486.jpg"
+        ],
+        "1819": [
+          "Data/img_align_celeba/034119.jpg",
+          "Data/img_align_celeba/034179.jpg",
+          "Data/img_align_celeba/034386.jpg"
+        ],
+        "3848": [
+          "Data/img_align_celeba/015485.jpg",
+          "Data/img_align_celeba/023769.jpg",
+          "Data/img_align_celeba/027171.jpg"
+        ],
+        "5147": [
+          "Data/img_align_celeba/008871.jpg",
+          "Data/img_align_celeba/011150.jpg",
+          "Data/img_align_celeba/015650.jpg"
+        ],
+        "7666": [
+          "Data/img_align_celeba/017404.jpg",
+          "Data/img_align_celeba/018322.jpg",
+          "Data/img_align_celeba/022394.jpg"
+        ],
+        "9706": [
+          "Data/img_align_celeba/051932.jpg",
+          "Data/img_align_celeba/054359.jpg",
+          "Data/img_align_celeba/072453.jpg"
+        ]
+      },
+      "expanded_hardness_mean_topk_distance": 0.47462870677312213,
+      "expanded_rank": 30,
+      "fit_reference_images": {
+        "102": [
+          "Data/img_align_celeba/000394.jpg",
+          "Data/img_align_celeba/000783.jpg",
+          "Data/img_align_celeba/014417.jpg"
+        ],
+        "1818": [
+          "Data/img_align_celeba/005750.jpg",
+          "Data/img_align_celeba/015046.jpg",
+          "Data/img_align_celeba/019480.jpg"
+        ],
+        "1819": [
+          "Data/img_align_celeba/000487.jpg",
+          "Data/img_align_celeba/012688.jpg",
+          "Data/img_align_celeba/030174.jpg"
+        ],
+        "3848": [
+          "Data/img_align_celeba/003120.jpg",
+          "Data/img_align_celeba/006265.jpg",
+          "Data/img_align_celeba/012947.jpg"
+        ],
+        "5147": [
+          "Data/img_align_celeba/000548.jpg",
+          "Data/img_align_celeba/004684.jpg",
+          "Data/img_align_celeba/007139.jpg"
+        ],
+        "7666": [
+          "Data/img_align_celeba/007695.jpg",
+          "Data/img_align_celeba/009085.jpg",
+          "Data/img_align_celeba/010351.jpg"
+        ],
+        "9706": [
+          "Data/img_align_celeba/006602.jpg",
+          "Data/img_align_celeba/048159.jpg",
+          "Data/img_align_celeba/051775.jpg"
+        ]
+      },
+      "forget_id": 1819,
+      "hard_retain_ids": [
+        1818,
+        102,
+        3848
+      ],
+      "random_retain_ids": [
+        7666,
+        5147,
+        9706
+      ],
+      "retain_ids": [
+        1818,
+        102,
+        3848
+      ],
+      "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities. Group rank=30; mean_top3_distance=0.474629.",
+      "set_name": "Expanded-1819"
+    }
+  ],
+  "expanded_selection_policy": {
+    "candidate_exclusions": "public forget and retain identities",
+    "expanded_forget_count": 30,
+    "hard_retain_count": 3,
+    "hardness_rule": "smallest mean cosine distance to top-k ArcFace centroid neighbors",
+    "min_images_per_identity": 15,
+    "selection_note": "Top 30 hardest non-public identities by smallest mean cosine distance to their top-3 ArcFace centroid neighbors; requires >= 15 images and excludes all public-group identities."
+  },
+  "group_count": 30,
+  "hardness_evidence_policy": {
+    "eligible_non_public_identity_count": 5956,
+    "excluded_public_identities": [
+      608,
+      1539,
+      3376,
+      3422,
+      3602,
+      5230,
+      5239,
+      7405
+    ],
+    "neighbors_per_identity": 3,
+    "source_neighbor_depth": 100
+  },
+  "official_quality_aggregation": {
+    "across_groups": "unweighted arithmetic mean of 30 group probabilities",
+    "gra_fiqs_direction": "lower raw B2 gradient is better",
+    "matching": "generated intended_identity equals real_identity",
+    "real_references_per_identity": 6,
+    "ties": "half a win",
+    "within_group": "Mann-Whitney probability superiority over identity-matched pairs"
+  },
+  "official_quality_protocol": {
+    "input_counts": {
+      "generated": 20160,
+      "real_unique": 960
+    },
+    "protocol": {
+      "alignment": "InsightFace five-landmark norm_crop, 112x112",
+      "det_thresh": 0.1,
+      "detector": "InsightFace antelopev2 SCRFD; largest bounding-box area",
+      "grafiqs": "official ArcFace ResNet-100; B2 gradient primary as selected in the paper's SOTA comparison; image/B1/B3/B4 retained; BGR input",
+      "ser_fiq": "official ArcFace; Dropout(0.5); T=100; alpha=130; r=0.88; deterministic trunk once, stochastic final Dropout/head repeated"
+    }
+  },
+  "policies": [
+    "nearest_hard",
+    "random_hard",
+    "median_hard",
+    "least_sim_hard"
+  ],
+  "reference_split_policy": {
+    "eval_reference_count": 3,
+    "eval_rule": "next disjoint sorted images by partition,image_name",
+    "fit_reference_count": 3,
+    "fit_rule": "first sorted images by partition,image_name"
+  },
+  "run_count": 120,
+  "scope": "30 split-consistent groups x 4 target policies",
+  "target_policy_random_seed": 2026,
+  "total_generation_attempts": 20160
+}

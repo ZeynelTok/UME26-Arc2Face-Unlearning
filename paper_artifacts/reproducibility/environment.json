@@ -1,0 +1,22 @@
+{
+  "architecture": "AMD64",
+  "cudnn_version_integer": 91900,
+  "determinism_note": "Generation uses explicit per-image Torch seeds, but exact cross-GPU/driver bitwise identity is not promised. Use the released predictions for exact table reproduction.",
+  "known_packaging_note": "insightface declares onnxruntime by distribution name; onnxruntime-gpu supplies the imported module and CUDAExecutionProvider, so pip check may report a false mismatch.",
+  "numpy": "2.5.0",
+  "nvidia_smi": "NVIDIA GeForce RTX 5070, 610.88, 12227 MiB",
+  "onnxruntime": "1.26.0",
+  "onnxruntime_available_providers": [
+    "TensorrtExecutionProvider",
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "pandas": "3.0.3",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.5",
+  "python_implementation": "CPython",
+  "scipy": "1.18.0",
+  "torch": "2.11.0+cu128",
+  "torch_cuda_available": true,
+  "torch_cuda_build": "12.8"
+}

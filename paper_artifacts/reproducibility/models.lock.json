@@ -1,0 +1,244 @@
+{
+  "arc2face_source": {
+    "git_commit": "8f3acd701d17fda7fde4c9f1d170fc88fecbe9ad",
+    "note": "The used arc2face/models.py is hashed below; local tracked changes remove comments only.",
+    "repository": "https://github.com/foivospar/Arc2Face",
+    "tracked_worktree_dirty": true
+  },
+  "files": [
+    {
+      "bytes": 3438167536,
+      "name": "arc2face_unet",
+      "path": "models/Arc2Face/arc2face/diffusion_pytorch_model.safetensors",
+      "sha256": "d2377c16b7135650ca375817a4812a999194fba1f081e39117bd54e50dacc784",
+      "source": "FoivosPar/Arc2Face"
+    },
+    {
+      "bytes": 492308829,
+      "name": "arc2face_encoder",
+      "path": "models/Arc2Face/encoder/pytorch_model.bin",
+      "sha256": "e2d364df774b7d3975f85de42bda73c0c0cdb952273dd5f138511b6cf65424aa",
+      "source": "FoivosPar/Arc2Face"
+    },
+    {
+      "bytes": 4313,
+      "name": "arc2face_model_source",
+      "path": "models/Arc2Face/arc2face/models.py",
+      "sha256": "9d24f79b1218b1ab3dcc7a97ef6c6d625ac899f223f9b21d824c6c269247892f",
+      "source": "foivospar/Arc2Face"
+    },
+    {
+      "bytes": 596517267,
+      "name": "adaface_ir50_webface4m",
+      "path": "models/adaface/weights/adaface_ir50_webface4m.ckpt",
+      "sha256": "52cca7c64808fea6f44f9b9aee2b0e091bf96c1ab4f6e31bedcdf5d77009b4f8",
+      "source": "mk-minchul/AdaFace"
+    },
+    {
+      "bytes": 11860,
+      "name": "adaface_model_source",
+      "path": "models/adaface/net.py",
+      "sha256": "4aae577e530a0b6776c24eae8547dd9b638f801fdaa5a2364974aef5a4c36cd1",
+      "source": "mk-minchul/AdaFace"
+    },
+    {
+      "bytes": 143607619,
+      "name": "insightface_landmark_3d68",
+      "path": "models/insightface/models/antelopev2/1k3d68.onnx",
+      "sha256": "df5c06b8a0c12e422b2ed8947b8869faa4105387f199c477af038aa01f9a45cc",
+      "source": "deepinsight/insightface-antelopev2"
+    },
+    {
+      "bytes": 5030888,
+      "name": "insightface_detector_2d106",
+      "path": "models/insightface/models/antelopev2/2d106det.onnx",
+      "sha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+      "source": "deepinsight/insightface-antelopev2"
+    },
+    {
+      "bytes": 260694151,
+      "name": "insightface_arcface",
+      "path": "models/insightface/models/antelopev2/arcface.onnx",
+      "sha256": "ec639a0429b4819130d1405a2d3b38beaa4cc4a6c5bd9cf48b94fdf65461de83",
+      "source": "deepinsight/insightface-antelopev2"
+    },
+    {
+      "bytes": 1322532,
+      "name": "insightface_genderage",
+      "path": "models/insightface/models/antelopev2/genderage.onnx",
+      "sha256": "4fde69b1c810857b88c64a335084f1c3fe8f01246c9a191b48c7bb756d6652fb",
+      "source": "deepinsight/insightface-antelopev2"
+    },
+    {
+      "bytes": 16923827,
+      "name": "insightface_scrfd_detector",
+      "path": "models/insightface/models/antelopev2/scrfd_10g_bnkps.onnx",
+      "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+      "source": "deepinsight/insightface-antelopev2"
+    },
+    {
+      "bytes": 287538,
+      "name": "ser_fiq_official_symbol",
+      "path": "models/official_quality/ser_fiq_source/insightface/model/insightface-symbol.json",
+      "sha256": "836045e55b546e87409d4877dbefaec94cffabf03c626eac611ff7af4404a6c5",
+      "source": "pterhoer/FaceImageQuality"
+    },
+    {
+      "bytes": 260958682,
+      "name": "ser_fiq_official_params",
+      "path": "models/official_quality/ser_fiq_source/insightface/model/insightface-0000.params",
+      "sha256": "8acca797c0a0649f8b00e698349462ebd81f467cbe2012df56cfa30794655e45",
+      "source": "pterhoer/FaceImageQuality"
+    },
+    {
+      "bytes": 260995444,
+      "name": "ser_fiq_full_onnx",
+      "path": "models/official_quality/ser_fiq_arcface_t100_mask.onnx",
+      "sha256": "ec6e2774de56e491d1f42fbecd4f02233ceed90f42ea3a45cf5b0eeda82355b8",
+      "source": "local validated conversion of pterhoer/FaceImageQuality"
+    },
+    {
+      "bytes": 209620308,
+      "name": "ser_fiq_trunk_onnx",
+      "path": "models/official_quality/ser_fiq_arcface_trunk_b1.onnx",
+      "sha256": "4569740d430a0ca19a3d39d642f2efd37fc188f041f8d1f74f0d7b33456018a2",
+      "source": "local validated split of official SER-FIQ"
+    },
+    {
+      "bytes": 51391566,
+      "name": "ser_fiq_head_onnx",
+      "path": "models/official_quality/ser_fiq_arcface_head_t100.onnx",
+      "sha256": "a772d0b0adfb696a552413c1eb2ae2b454bc39fb75b8c44addde18ced94f9339",
+      "source": "local validated split of official SER-FIQ"
+    },
+    {
+      "bytes": 261216376,
+      "name": "grafiqs_resnet100_ms1mv2_arcface",
+      "path": "models/official_quality/resnet100_ms1mv2_arcface.pth",
+      "sha256": "f2153932123dbb8695fca2d307e9eab618361c16d416f82ea83b81f3ef33cecb",
+      "source": "jankolf/grafiqs"
+    },
+    {
+      "bytes": 5689,
+      "name": "ser_fiq_official_source",
+      "path": "models/official_quality/ser_fiq_source/face_image_quality.py",
+      "sha256": "dc6d4d3f591e19a29f96c879bc176031e54ff4c25cd5ba8fd6e370febbba3789",
+      "source": "pterhoer/FaceImageQuality"
+    },
+    {
+      "bytes": 5382,
+      "name": "grafiqs_official_source",
+      "path": "models/official_quality/grafiqs_source/extract_grafiqs.py",
+      "sha256": "ce07aeddf3b54ae6ac096b3826b1cf5b391754cd3835495d6d916531fb43248c",
+      "source": "jankolf/grafiqs"
+    },
+    {
+      "bytes": 342,
+      "name": "stable_diffusion_v1_5/feature_extractor/preprocessor_config.json",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/feature_extractor/preprocessor_config.json",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 541,
+      "name": "stable_diffusion_v1_5/model_index.json",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/model_index.json",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "e2f6f22e274374010aec30c79eb2d6e53fff4a36ac0225523a92cb2d41a83347",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 4723,
+      "name": "stable_diffusion_v1_5/safety_checker/config.json",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/safety_checker/config.json",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "5dd77a06cbd9b155060bd58deb81ffd1aafc1c6d7970acac674c1128bd4edfe2",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 308,
+      "name": "stable_diffusion_v1_5/scheduler/scheduler_config.json",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/scheduler/scheduler_config.json",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "699cce92eb7c122e2eb7dfdea78e6187fda76a5ed4a8e42319b85610e620e091",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 617,
+      "name": "stable_diffusion_v1_5/text_encoder/config.json",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/text_encoder/config.json",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 524619,
+      "name": "stable_diffusion_v1_5/tokenizer/merges.txt",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/tokenizer/merges.txt",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 472,
+      "name": "stable_diffusion_v1_5/tokenizer/special_tokens_map.json",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/tokenizer/special_tokens_map.json",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 806,
+      "name": "stable_diffusion_v1_5/tokenizer/tokenizer_config.json",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/tokenizer/tokenizer_config.json",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 1059962,
+      "name": "stable_diffusion_v1_5/tokenizer/vocab.json",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/tokenizer/vocab.json",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 743,
+      "name": "stable_diffusion_v1_5/unet/config.json",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/unet/config.json",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 547,
+      "name": "stable_diffusion_v1_5/vae/config.json",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/vae/config.json",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    },
+    {
+      "bytes": 334643276,
+      "name": "stable_diffusion_v1_5/vae/diffusion_pytorch_model.safetensors",
+      "path": "hf_cache:hub/models--stable-diffusion-v1-5--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14/vae/diffusion_pytorch_model.safetensors",
+      "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "sha256": "a2b5134f4dbc140d9c11f11cba3233099e00af40f262f136c691fb7d38d2194c",
+      "source": "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    }
+  ],
+  "grafiqs_source": {
+    "git_commit": "8d11a1f8506fb0f86ebd7738afc31467e2a01058",
+    "repository": "https://github.com/jankolf/grafiqs"
+  },
+  "ser_fiq_source": {
+    "git_commit": "611296605db57b8d50518fd5911d5111eeb52747",
+    "repository": "https://github.com/pterhoer/FaceImageQuality"
+  },
+  "stable_diffusion_base": {
+    "repository": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14"
+  }
+}
